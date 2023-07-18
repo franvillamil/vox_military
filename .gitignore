@@ -1,0 +1,7 @@
+.Rapp.history
+.DS_Store
+.Rapp.history
+*.Rout
+.RData
+download_shp/shp_secciones_2019/*
+download_shp/shp_provincias/*
