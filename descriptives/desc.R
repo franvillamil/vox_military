@@ -2,9 +2,9 @@
 options(stringsAsFactors = FALSE)
 options("modelsummary_format_numeric_latex" = "plain")
 # List of packages
-pkg = c("stargazer", "plyr", "dplyr", "stringr", "ggplot2",
+pkg = c("plyr", "dplyr", "stringr", "ggplot2",
   "rgdal", "rgeos", "maptools", "RColorBrewer", "cowplot",
-  "readr", "lavaan", "smooth", "Hmisc", "modelsummary")
+  "readr", "modelsummary") # "lavaan", "smooth", "Hmisc"
 # Checks if they are installed, install if not
 if (length(setdiff(pkg, rownames(installed.packages()))) > 0) {
   install.packages(setdiff(pkg, rownames(installed.packages())))}
