@@ -2,11 +2,11 @@
 .DELETE_ON_ERROR:
 
 ## > all (default) : excludes spatial analyses
-all: descriptives survey analyses_lm extra
+all: shapefile descriptives survey analyses_lm extra
 ## > really_all	 : including sp models (computing-intensive)
 really_all: all analyses_sp
 ## Rest of stuff
-input: input_data/secc_censal_indic_demograficos.csv input_data/secc_censal_renta.csv download_shp/shp_secciones_2019/SECC_CE_20190101.shp download_shp/shp_provincias/gadm36_ESP_2.shp input_data/cuarteles.csv input_data/barometers_full.csv
+shapefile: download_shp/shp_secciones_2019/SECC_CE_20190101.shp download_shp/shp_provincias/gadm36_ESP_2.shp
 data: create_dataset/output/dataset.Rout
 descriptives: descriptives/desc.Rout
 analyses_lm: lm/lm.Rout lm_diff/lm_diff.Rout
@@ -16,7 +16,7 @@ extra: cuarteles1920/output/c1920_CUSEC.csv c1920_models/c1920_models.Rout cses/
 
 ## > clean	 : remove all output files
 clean:
-	rm -rfv input_data download_shp
+	rm -rfv download_shp
 	rm -rfv */output
 	rm -fv */*.Rout
 
@@ -32,20 +32,10 @@ taskflow:
 	sips -s format jpeg taskflow/workflow.pdf --out taskflow/workflow.jpeg
 
 # ------------------------
-# Input data (symlinks & download)
-
-input_data:
-	mkdir -p $@
+# Shapefiles (download)
 
 download_shp:
 	mkdir -p $@
-
-input_data/cuarteles.csv input_data/secc_censal_renta.csv input_data/secc_censal_indic_demograficos.csv input_data/barometers_full.csv: | input_data
-	curl -L -O https://github.com/franvillamil/franvillamil.github.io/raw/master/files/input_cuarteles_militares.zip
-	# zip -d input_cuarteles_militares.zip "__MACOSX*"
-	unzip input_cuarteles_militares.zip
-	rm input_cuarteles_militares.zip
-	mv *.csv input_data
 
 download_shp/shp_secciones_2019/SECC_CE_20190101.shp: | download_shp
 	curl -O https://www.ine.es/prodyser/cartografia/seccionado_2019.zip
