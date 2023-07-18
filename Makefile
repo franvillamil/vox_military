@@ -103,17 +103,16 @@ cuarteles1920/output/c1920_CUSEC.csv: cuarteles1920/overlay.R input_data/cuartel
 # Analyses
 
 descriptives/desc.Rout: descriptives/desc.R func/raincloud_func.R download_shp/shp_provincias/gadm36_ESP_2.shp create_dataset/output/dataset.csv download_shp/shp_secciones_2019/SECC_CE_20190101.shp input_data/cuarteles.csv
-	mkdir -p $(@D)
 	mkdir -p $(@D)/output
 	Rscript --no-save --verbose $< 2>&1 | tee $<out
 	find ./descriptives/output -name "*map*" -exec pdfcrop {} {} \;
 
 lm/lm.Rout: lm/lm.R create_dataset/output/dataset.csv func/my_stargazer.R
-	mkdir -p $(@D)
+	mkdir -p $(@D)/output
 	Rscript --no-save --verbose $< 2>&1 | tee $<out
 
 lm_diff/lm_diff.Rout: lm_diff/lm_diff.R create_dataset/output/dataset.csv func/my_stargazer.R
-	mkdir -p $(@D)
+	mkdir -p $(@D)/output
 	Rscript --no-save --verbose $< 2>&1 | tee $<out
 
 slm_datajoin/output/shp.rds: slm_datajoin/join.R download_shp/shp_secciones_2019/SECC_CE_20190101.shp create_dataset/output/dataset.csv
@@ -121,16 +120,16 @@ slm_datajoin/output/shp.rds: slm_datajoin/join.R download_shp/shp_secciones_2019
 	Rscript --no-save --verbose $< 2>&1 | tee $<out
 
 slm/slm_invd.Rout: slm/slm_invd.R slm_datajoin/output/shp.rds
-	mkdir -p $(@D)
+	mkdir -p $(@D)/output
 	Rscript --no-save --verbose $< 2>&1 | tee $<out
 
 slm/slm_nb.Rout: slm/slm_nb.R slm_datajoin/output/shp.rds
-	mkdir -p $(@D)
+	mkdir -p $(@D)/output
 	Rscript --no-save --verbose $< 2>&1 | tee $<out
 	pdfcrop slm/output/pred_dy_nb.pdf slm/output/pred_dy_nb.pdf
 
 slm_tables/slm_tables.Rout: slm_tables/slm_tables.R func/my_stargazer.R func/lambda_row.R slm/slm_invd.Rout slm/slm_nb.Rout
-	mkdir -p $(@D)
+	mkdir -p $(@D)/output
 	Rscript --no-save --verbose $< 2>&1 | tee $<out
 
 survey_analyses/s_analyses.Rout: survey_analyses/s_analyses.R input_data/barometers_full.csv func/my_stargazer.R func/se.R func/raincloud_func.R
@@ -138,13 +137,13 @@ survey_analyses/s_analyses.Rout: survey_analyses/s_analyses.R input_data/baromet
 	Rscript --no-save --verbose $< 2>&1 | tee $<out
 
 c1920_models/c1920_models.Rout: c1920_models/c1920_models.R create_dataset/output/dataset.csv
-	mkdir -p $(@D)
+	mkdir -p $(@D)/output
 	Rscript --no-save --verbose $< 2>&1 | tee $<out
 
 cses/cses.Rout: cses/cses.R
-	mkdir -p $(@D)
+	mkdir -p $(@D)/output
 	Rscript --no-save --verbose $< 2>&1 | tee $<out
 
 politbarometer/pb.Rout: politbarometer/pb.R input_data/ZA2391_v13-0-0.dta.zip
-	mkdir -p $(@D)
+	mkdir -p $(@D)/output
 	Rscript --no-save --verbose $< 2>&1 | tee $<out
