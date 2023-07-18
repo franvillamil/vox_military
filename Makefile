@@ -53,6 +53,25 @@ download_shp/shp_provincias/gadm36_ESP_2.shp: | download_shp
 	mv gadm/gadm36_ESP_2.* download_shp/shp_provincias/
 	rm -rv gadm
 
+input_data:
+	mkdir -p $@
+
+input_data/barometers_full.csv: | input_data
+
+input_data/cuarteles.csv: | input_data
+
+input_data/cuarteles1920.csv: | input_data
+
+input_data/INE_census.csv: | input_data
+
+input_data/results1936.csv: | input_data
+
+input_data/secc_censal_indic_demograficos.csv: | input_data
+
+input_data/secc_censal_renta.csv: | input_data
+
+input_data/ZA2391_v13-0-0.dta.zip: | input_data
+
 # ------------------------
 # Creating dataset
 
