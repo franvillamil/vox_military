@@ -6,6 +6,7 @@ all: descriptives survey analyses_lm extra
 ## > really_all	 : including sp models (computing-intensive)
 really_all: all analyses_sp
 ## Rest of stuff
+input: input_data/secc_censal_indic_demograficos.csv input_data/secc_censal_renta.csv download_shp/shp_secciones_2019/SECC_CE_20190101.shp download_shp/shp_provincias/gadm36_ESP_2.shp input_data/cuarteles.csv input_data/barometers_full.csv
 data: create_dataset/output/dataset.Rout
 descriptives: descriptives/desc.Rout
 analyses_lm: lm/lm.Rout lm_diff/lm_diff.Rout
@@ -15,6 +16,7 @@ extra: cuarteles1920/output/c1920_CUSEC.csv c1920_models/c1920_models.Rout cses/
 
 ## > clean	 : remove all output files
 clean:
+	rm -rfv input_data download_shp
 	rm -rfv */output
 	rm -fv */*.Rout
 
@@ -28,6 +30,38 @@ taskflow:
 	rm create_dependency_graph.Rout
 	dot -Grankdir=LR -Tpdf taskflow/dependency_list.txt -o taskflow/workflow.pdf
 	sips -s format jpeg taskflow/workflow.pdf --out taskflow/workflow.jpeg
+
+# ------------------------
+# Input data (symlinks & download)
+
+input_data:
+	mkdir -p $@
+
+download_shp:
+	mkdir -p $@
+
+input_data/cuarteles.csv input_data/secc_censal_renta.csv input_data/secc_censal_indic_demograficos.csv input_data/barometers_full.csv: | input_data
+	curl -L -O https://github.com/franvillamil/franvillamil.github.io/raw/master/files/input_cuarteles_militares.zip
+	# zip -d input_cuarteles_militares.zip "__MACOSX*"
+	unzip input_cuarteles_militares.zip
+	rm input_cuarteles_militares.zip
+	mv *.csv input_data
+
+download_shp/shp_secciones_2019/SECC_CE_20190101.shp: | download_shp
+	curl -O https://www.ine.es/prodyser/cartografia/seccionado_2019.zip
+	unzip seccionado_2019.zip
+	rm seccionado_2019.zip
+	mkdir download_shp/shp_secciones_2019
+	mv SECC*.* download_shp/shp_secciones_2019
+
+download_shp/shp_provincias/gadm36_ESP_2.shp: | download_shp
+	curl -L -O https://biogeo.ucdavis.edu/data/gadm3.6/shp/gadm36_ESP_shp.zip
+	mkdir gadm
+	unzip gadm36_ESP_shp.zip -d gadm
+	rm gadm36_ESP_shp.zip
+	mkdir download_shp/shp_provincias
+	mv gadm/gadm36_ESP_2.* download_shp/shp_provincias/
+	rm -rv gadm
 
 # ------------------------
 # Creating dataset

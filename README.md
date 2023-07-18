@@ -27,26 +27,38 @@ There are two types of raw files that are needed to run the analyses. The `downl
 
 In addition, the `func` folder contains a set of R functions predefined that are used throghout the code.
 
+#### Using `make`
+
+
+
 ---
 
 #### R code
 
-c1920_models
-create_dataset
-cses
-cuarteles1920
-descriptives
-distance_matrix
-download_elections
-lm
-lm_diff
-politbarometer
-slm
-slm_datajoin
-slm_tables
-spatial_lags
-spatial_overlay
-survey_analyses
+**Data creation:**
+
+- `download_elections`
+- `distance_matrix`
+- `spatial_lags`
+- `spatial_overlay`
+- `create_dataset`
+- `slm_datajoin`
+- `cuarteles1920`
+
+**Main analyses:**
+
+- `lm`
+- `lm_diff`
+- `slm`
+- `slm_tables`
+- `survey_analyses`
+- `cses`
+
+**Extra:**
+
+- `descriptives`
+- `c1920_models`
+- `politbarometer`
 
 
 ---

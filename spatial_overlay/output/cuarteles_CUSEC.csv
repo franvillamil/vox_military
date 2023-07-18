@@ -1,0 +1,268 @@
+"provincia","nombre","tipo","CUSEC","long","lat"
+"asturias","Regimiento de Infanteria 'Principe' n 3","base/cuartel","3306601005",-5.73551389895292,43.4085635530997
+"a coruna","Museo Historico Militar de La Coruna","museo","1503001005",-8.39010813607479,43.3690424999615
+"a coruna","Cuartel General del Mando de Apoyo a la Maniobra (MAM)","HQ","1503001005",-8.39330311534873,43.3693555072072
+"pontevedra","Brigada 'Galicia' VII","base/cuartel","3603803002",-8.65285051297842,42.3853409687214
+"bizkaia","Regimiento de Infanteria Garellano N 45","base/cuartel","4803801001",-2.80464962845419,43.3385405961587
+"gipuzkoa","USAC Loyola","USAC","2006904014",-1.96465789102122,43.3080023352116
+"gipuzkoa","Regimiento de Infanteria ""Tercio Viejo de Sicilia"" N 67","base/cuartel","2006904014",-1.96465789102122,43.3080023352116
+"sevilla","Cuartel General Fuerza Terrestre del Ejercito de Tierra","HQ","4109105023",-5.98548507203327,37.3776080830599
+"sevilla","Segunda Subinspeccion General del Ejercito (Sur)","base/cuartel","4109105019",-5.98452280319936,37.3755830434082
+"sevilla","Regimiento de Transmisiones n32","base/cuartel","4103805002",-6.00394817846845,37.3136444748051
+"sevilla","Regimiento de Artilleria Antiaerea N 74","base/cuartel","4103805002",-6.00394817846845,37.3136444748051
+"sevilla","Batallon de Helicopteros de Maniobra IV","base/cuartel","4103805002",-6.00372287087641,37.313661535304
+"sevilla","Agrupacion de Apoyo Logistico n 21","base/cuartel","4109109004",-5.9274251866899,37.3867628954909
+"sevilla","Centro de Historia y Cultura Militar Sur","museo","4109105019",-5.98452280319936,37.3755830434082
+"sevilla","Museo Historico Militar de Sevilla","museo","4109103003",-5.980077119843,37.3790844022854
+"sevilla","Biblioteca Historico Militar de Sevilla","biblioteca","4109103003",-5.980077119843,37.3790844022854
+"sevilla","Archivo Intermedio Militar Sur","biblioteca","4109105019",-5.98452280319936,37.3755830434082
+"cadiz","Centro de Formacion de Tropa n 2","formacion","1103106031",-6.21615409382788,36.4448526190877
+"cadiz","Regimiento de Artilleria de Costa n 4","base/cuartel","1103106026",-6.21881852312274,36.4438844802282
+"malaga","Brigada 'Rey Alfonso XIII' II de la Legion","base/cuartel","2908402006",-5.18840682239379,36.7613546966774
+"almeria","Brigada 'Rey Alfonso XIII' II de la Legion","base/cuartel","0410102001",-2.41082945633023,36.8976797682345
+"granada","Mando de Adiestramiento y Doctrina","formacion","1808704001",-3.59628395993084,37.1748256451612
+"granada","Mando de Adiestramiento y Doctrina","formacion","1808708001",-3.59961512983413,37.183196059053
+"cordoba","Brigada 'Guzman el Bueno' X","base/cuartel","1404701001",-4.78104712277,38.0170748811691
+"cordoba","Parque y Centro de Mantenimiento de Vehiculos Ruedas N 2","otros","1402110046",-4.85210001859152,37.8659835676807
+"murcia","Regimiento de Artilleria Antiaerea N 73","base/cuartel","3001610022",-1.02453205877116,37.6057178572633
+"murcia","INSTITUTO DE HISTORIA Y CULTURA MILITAR","cultural","2807909031",-3.72284407342204,40.4329640290366
+"murcia","Brigada ""Almogavares"" VI de Paracaidistas","base/cuartel","3003007003",-1.22078885782391,37.9916823796943
+"murcia","USAC TENTEGORRA","USAC","3001610022",-1.02453205877116,37.6057178572633
+"alicante","Mando de Operaciones Especiales","base/cuartel","0301406020",-0.507339439527242,38.3691910057287
+"valencia","Cuartel General Terrestre de Alta Disponibilidad (CGTAD)","base/cuartel","4625001009",-0.369455927852024,39.473919114703
+"valencia","Cuartel General Terrestre de Alta Disponibilidad (CGTAD)","base/cuartel","4607001003",-0.472512238108496,39.6196137283768
+"valencia","HQ NRDC-ESP","base/cuartel","4607001003",-0.472512238108496,39.6196137283768
+"valencia","Mando de Transmisiones","base/cuartel","4607001003",-0.472512238108496,39.6196137283768
+"valencia","Brigada ""Almogavares"" VI de Paracaidistas","base/cuartel","4616101001",-0.569640886600745,39.7078793406113
+"valencia","Regimiento de Artilleria Antiaerea N 73","base/cuartel","4616101001",-0.569640886600745,39.7078793406113
+"valencia","Regimiento de Transmisiones 21","base/cuartel","4616101001",-0.569640886600745,39.7078793406113
+"valencia","Regimiento de Inteligencia n 1","base/cuartel","4625006007",-0.360779192782285,39.4714603939385
+"valencia","Regimiento de Defensa NBQ ""Valencia"" n 1","base/cuartel","4619001027",-0.434277339180006,39.4993858458178
+"valencia","Regimiento de Operaciones de Informacion n 1","base/cuartel","4625006007",-0.360779192782285,39.4714603939385
+"valencia","Batallon del Cuartel General Terrestre de Alta Disponibilidad","base/cuartel","4607001003",-0.472512238108496,39.6196137283768
+"valencia","Batallon de Policia Militar I","base/cuartel","4607001003",-0.472512238108496,39.6196137283768
+"valencia","Museo Historico Militar de Valencia (Valencia)","museo","4625006007",-0.362324919861937,39.4718641326628
+"valencia","Centro de Historia y Cultura Militar Centro","cultural","4625006007",-0.360779192782285,39.4714603939385
+"valencia","Museo Historico Militar de Valencia","museo","4625006007",-0.362324919861937,39.4718641326628
+"valencia","Archivo Historico Militar Centro","archivo","4625006007",-0.360856480807588,39.4697159737733
+"valencia","Biblioteca Historico Militar de Valencia","cultural","4625002040",-0.367166659261992,39.4723680945929
+"valencia","Area de Historia Militar","cultural","4625006007",-0.360779192782285,39.4714603939385
+"barcelona","Inspeccion General del Ejercito","HQ","0801901031",2.18030069393846,41.3795758567057
+"barcelona","Biblioteca Historico Militar de Barcelona","biblioteca","0801904053",2.11108117001352,41.3862702528362
+"barcelona","Tercera Subinspeccion General del Ejercito (Pirenaica)","HQ","0801901030",2.1778811827409,41.3766565802733
+"barcelona","Regimiento de Infanteria 'Barcelona' n 63","base/cuartel","0801904053",2.11108117001352,41.3862702528362
+"barcelona","Agrupacion de Apoyo Logistico n 41","base/cuartel","0820003007",2.03999463134574,41.3400516087919
+"girona","Regimiento de Infanteria 'Arapiles' 62","base/cuartel","1715801001",2.97389684889266,42.3692117792186
+"girona","Regimiento de Infanteria 'Arapiles' 62","base/cuartel","1715801001",2.97389684889266,42.3692117792186
+"girona","Museo Historico Militar de Figueras (Figueres-Girona)","museo","1706601002",2.94843157541148,42.273158743877
+"lleida","Academia General Basica de Suboficiales","formacion","2521501001",0.878836644193001,42.1995644841281
+"badajoz","Brigada 'Extremadura' XI","base/cuartel","0601508001",-6.89991093002424,39.0240243251078
+"caceres","Centro de Formacion de Tropa N1","formacion","1003704004",-6.36568251412394,39.4300582363603
+"ciudad real","Batallon de Helicopteros de Ataque I","base/cuartel","1301302003",-3.75605046370554,38.9484172448517
+"toledo","Academia de Infanteria","formacion","4516807001",-4.01420317304856,39.8593971517553
+"toledo","Museo del ejercito","museo","4516801001",-4.02058850041748,39.8576499734402
+"guadalajara","Archivo militar general de Guadalajara","archivo","1913001001",-3.16897747235818,40.6360207685179
+"zaragoza","Academia General Militar","formacion","5029711001",-0.86971779044748,41.6987526221508
+"zaragoza","Academia de Logistica","formacion","5006702003",-1.62949001302448,41.3541094032482
+"zaragoza","Brigada Logistica","base/cuartel","5029705034",-0.882851804861462,41.6340157292226
+"zaragoza","Regimiento de Pontoneros y Especialidades de Ingenieros n 12","base/cuartel","5029712003",-0.964226651178115,41.7030573519732
+"zaragoza","Agrupacion de Apoyo Logistico n 41","base/cuartel","5029711001",-0.857545047380144,41.724759245232
+"zaragoza","Brigada Aragon I ","base/cuartel","5029711001",-0.858136247995739,41.7248611971047
+"zaragoza","Regimiento de Artilleria de Campana","base/cuartel","5029711001",-0.853624382119925,41.7273792289881
+"zaragoza","Centro de Adiestramiento ""San Gregorio""","formacion","5029711001",-0.866642817354195,41.7044031914339
+"zaragoza","Regimiento de Caballeria Espana N 11","base/cuartel","5029711003",-0.859615426491845,41.7130963909513
+"huesca","Cuartel General de la Division 'Castillejos'","base/cuartel","2212504003",-0.392869139718707,42.1435445273884
+"huesca","Regimiento de Infanteria 'Galicia' 64 de Cazadores de Montana","base/cuartel","2213001004",-0.546314195228603,42.5777319980809
+"huesca","Regimiento de Infanteria 'Galicia' 64 de Cazadores de Montana","base/cuartel","2213001006",-0.557564872820694,42.5663109340858
+"huesca","Escuela Militar de Montana y Operaciones Especiales","formacion","2213001004",-0.546314195228603,42.5777319980809
+"valladolid","Academia de caballeria","formacion","4718601007",-4.73075441901354,41.6478970982181
+"valladolid","Academia de caballeria","formacion","4718612002",-4.76302930613487,41.581764389468
+"valladolid","Cuarta Subinspeccion General del Ejercito (Noroeste)","HQ","4718609003",-4.72570552839331,41.6566807354389
+"valladolid","Agrupacion de Apoyo Logistico n. 61","otros","4715501002",-4.66315181065656,41.7036850695638
+"valladolid","Regimiento de Caballeria 'FARNESIO' N12","base/cuartel","4715501002",-4.66315181065656,41.7036850695638
+"valladolid","USBA ""El Empecinado""","USAC","4715501002",-4.66315181065656,41.7036850695638
+"salamanca","Regimiento de Especialidades de Ingenieros n 11","base/cuartel","3727405008",-5.66269013806966,40.9759619615921
+"salamanca","Mando de Ingenieros","HQ","3727405008",-5.66269013806966,40.9759619615921
+"avila","Archivo General Militar de Avila","archivo","0501901001",-4.702285,40.656811
+"segovia","Archivo General Militar de Segovia","archivo","4019401001",-4.130846,40.952111
+"segovia","Academia de Artilleria","formacion","4019403004",-4.11736214727485,40.9462881928852
+"segovia","Academia de Artilleria","formacion","4019405006",-4.10684452983487,40.931076021295
+"burgos","Division 'San Marcial'","base/cuartel","0905905024",-3.67765190368828,42.3494319378145
+"burgos","Regimiento de Artilleria de Campana n 11","base/cuartel","0908601001",-3.56880611904332,42.3386184249623
+"burgos","Museo Militar de Burgos","museo","0905902004",-3.69999067794425,42.3438900339823
+"burgos","Regimiento de Transmisiones n 1","base/cuartel","0908601001",-3.56880611904332,42.3386184249623
+"burgos","Regimiento de Transmisiones n 1","base/cuartel","2212504003",-0.392869139718707,42.1435445273884
+"burgos","Regimiento de Ingenieros n 1","base/cuartel","0908601001",-3.56880611904332,42.3386184249623
+"leon","Mando de Artilleria de Campana","base/cuartel","2414201003",-5.70029919683164,42.6186216180059
+"leon","Regimiento de Artilleria Lanzacohetes Campana n 63","base/cuartel","2400802002",-6.0660366296807,42.4608738132962
+"la rioja","Batallon de Helicopteros de Maniobra III","base/cuartel","2600201001",-2.32975574872141,42.4514098298488
+"navarra","Regimiento de Infanteria 'America' 66, de Cazadores de Montana","base/cuartel","3190201001",-1.67824186316847,42.8445251581189
+"madrid","Academia de Aviacion del Ejercito de Tierra","base/cuartel","2804501016",-3.76706462416529,40.6967843168661
+"madrid","Academia de Aviacion del Ejercito de Tierra","base/cuartel","1301302003",-3.74174257832525,38.950626846691
+"madrid","Academia de Ingenieros","formacion","2807201001",-3.875556,40.629706
+"madrid","Agrupacion de Apoyo Logistico n 11","base/cuartel","2804501016",-3.78616415819901,40.6805315304369
+"madrid","Agrupacion de Sanidad n 1","base/cuartel","2811501028",-3.81483752508519,40.4021877526594
+"madrid","Agrupacion de Transporte n 1","base/cuartel","2807920002",-3.61392646349907,40.4380782069979
+"madrid","Agrupacion de Transporte n 1","base/cuartel","2800504001",-3.35163680029037,40.5020377567994
+"madrid","Agrupacion de Transporte n 1","base/cuartel","1100801001",-5.52001009808747,36.221581814611
+"madrid","Archivo General Militar de Madrid","archivo","2807909031",-3.72222365474559,40.4334684120202
+"madrid","Biblioteca Central Militar","biblioteca","2807909031",-3.72222365474559,40.4334684120202
+"madrid","Brigada 'Guadarrama' XII","base/cuartel","2807908130",-3.704463,40.554969
+"madrid","Brigada 'Almogavares' VI de Paraciadistas","base/cuartel","2810401004",-3.47941924075951,40.4922857383051
+"madrid","Centro Deportivo y Sociocultural Militar del Ejercito de Tierra 'La Dehesa'","otros","2807910158",-3.7929547484653,40.3815807806606
+"madrid","Centro Geografico del Ejercito de Tierra","base/cuartel","2807910158",-3.77957050996336,40.391500467188
+"madrid","Cuartel General de la Brigada de Sanidad","base/cuartel","2811501028",-3.81451147246975,40.4024212546102
+"madrid","Cuartel General del Mando de Artilleria Antiaerea","base/cuartel","2807908129",-3.68164023214225,40.5148009349167
+"madrid","Direccion de Acuartelamiento del Ejercito","HQ","2807901009",-3.71270855933554,40.4149817018952
+"madrid","Direccion de Infraestructura","HQ","2807901073",-3.69447834976031,40.4216568496987
+"madrid","Escuela de Guerra del Ejercito de Tierra","formacion","2807901107",-3.71210873092462,40.4294882573789
+"madrid","Escuela Militar de Defensa NBQ","formacion","2807201001",-3.88111719598036,40.6251973373683
+"madrid","Escuela Politecnica Superior del Ejercito de Tierra","formacion","2807905002",-3.6879775848854,40.446002488761
+"madrid","Fuerzas Aeromoviles del Ejercito de Tierra","base/cuartel","2804501016",-3.76706462416529,40.6967843168661
+"madrid","Instituto de Historia y Cultura Militar","cultural","2807909031",-3.72222365474559,40.4334684120202
+"madrid","Mando de Personal","HQ","2807901073",-3.69496300531417,40.421842128059
+"madrid","Museo de Medios Acorazados","museo","2807908130",-3.704463,40.554969
+"madrid","Parque y Centro de Abastecimiento de Material de Intendencia","base/cuartel","2807917041",-3.69080538708013,40.3379823526939
+"madrid","Parque y Centro de Mantenimiento de Material de Transmisiones","base/cuartel","2807908004",-3.7690969382365,40.5141745294551
+"madrid","Parque y Centro de Mantenimiento de Sistemas Acorazados n 1","base/cuartel","2807917041",-3.69080538708013,40.3379823526939
+"madrid","Patronato de Huerfanos del Ejercito de Tierra","otros","2807901001",-3.71206800822011,40.4162884235448
+"madrid","Regimiento de Guerra Electronica n 31","base/cuartel","2807908004",-3.7690969382365,40.5141745294551
+"madrid","Regimiento de Transmisiones n 22","base/cuartel","2811501018",-3.78581065151338,40.4073876488585
+"madrid","Regimiento de Artilleria Antiaerea 71","base/cuartel","2807908129",-3.68164023214225,40.5148009349167
+"madrid","Regimiento de Infanteria 'Inmemorial del Rey' n 1","base/cuartel","2807901073",-3.69496300531417,40.421842128059
+"madrid","Regimiento Acorazado 'Alcazar de Toledo' 61","base/cuartel","2807908130",-3.704463,40.554969
+"madrid","Regimiento de Infanteria 'Asturias' 31","base/cuartel","2807908130",-3.704463,40.554969
+"madrid","Unidad de Apoyo Logistico Sanitario","base/cuartel","2807911193",-3.75282816003725,40.3695133938179
+"madrid","Unidad de Transmisiones del Mando de Artilleria Antiaerea","base/cuartel","2807908004",-3.7690969382365,40.5141745294551
+"madrid","Regimiento Acorazado Alcazar de Toledo 61","base/cuartel","2807908130",-3.704463,40.554969
+"santa cruz de tenerife","Mando de Canarias","HQ","3803805003",-16.2563268734528,28.46772090555
+"santa cruz de tenerife","Regimiento de Infanteria 'Tenerife' N 49","base/cuartel","3803809009",-16.2893189893975,28.43538543905
+"santa cruz de tenerife","Regimiento de Artilleria n 93","base/cuartel","3802304002",-16.3510970211211,28.4804636825375
+"santa cruz de tenerife","Batallon de Helicopteros de Maniobra VI","base/cuartel","3802304002",-16.3510970211211,28.4804636825375
+"santa cruz de tenerife","Batallon de Zapadores XVI","base/cuartel","3802302003",-16.2906391626462,28.4658733434475
+"santa cruz de tenerife","Batallon de Zapadores XVI","base/cuartel","3501603041",-15.4259366860231,28.1563071942476
+"santa cruz de tenerife","Quinta Subinspeccion General del Ejercito (Canarias)","HQ","3803805002",-16.2563079053961,28.4682396820352
+"santa cruz de tenerife","Agrupacion de Apoyo Logistico n 81","base/cuartel","3802302001",-16.2880378205015,28.4645209769531
+"santa cruz de tenerife","Centro de Historia y Cultura Militar","museo","3803801007",-16.2476857997326,28.475465771407
+"santa cruz de tenerife","Museo Historico Militar de Canarias-Santa Cruz de Tenerife","museo","3803801007",-16.2476857997326,28.475465771407
+"las palmas","Brigada 'Canarias' XVI","base/cuartel","3501603041",-15.4259366860231,28.1563071942476
+"las palmas","Regimiento de Infanteria 'Soria' n 9","base/cuartel","3501701001",-13.8555149775825,28.5003259457231
+"las palmas","Regimiento de Infanteria 'Canarias' n 50","base/cuartel","3501603041",-15.4259366860231,28.1563071942476
+"las palmas","Regimiento de Artilleria Antiaerea n 94","base/cuartel","3501603041",-15.4259366860231,28.1563071942476
+"las palmas","Batallon del Cuartel General de la Brigada 'Canarias' XVI","base/cuartel","3501603041",-15.4259366860231,28.1563071942476
+"las palmas","Grupo Logistico XVI","base/cuartel","3501603041",-15.4259366860231,28.1563071942476
+"las palmas","Unidad de Apoyo a la Proyeccion 'Marques de Herrera'","base/cuartel","3500402013",-13.5611667884701,28.9686386444152
+"baleares","Cuartel General de la Comandancia General de Baleares","HQ","0704001002",2.64749077573959,39.5680955564575
+"baleares","Regimiento de Infanteria 'Palma' n 47","base/cuartel","0704002056",2.60542894324417,39.5743756154815
+"baleares","Centro de Historia y Cultura Militar","museo","0704001010",2.65253597631159,39.5757240418376
+"baleares","Museo Historico Militar de San Carlos (Porto Pi, Palma de Mallorca)","museo","0704002017",2.62413432661957,39.5466683851323
+"baleares","Museo Historico Militar de Menorca (Es Castell, Menorca)","museo","0706401001",4.29061987442149,39.8795413147933
+"malaga","Comandancia Naval de Malaga","HQ","2906702006",-4.41254220460529,36.7167352613446
+"huelva","Comandancia Naval de Huelva","HQ","2104103001",-6.95774946405025,37.254496922372
+"cadiz","Comandancia Naval de Algeciras","HQ","1100402002",-5.442490043571,36.1257113064225
+"almeria","Comandancia Naval de Almeria","HQ","0401302006",-2.46383378601875,36.83474908391
+"sevilla","Comandancia Naval de Sevilla","HQ","4109110011",-5.98928387072767,37.3692231104366
+"cadiz","Comandancia General de Infanteria de Marina (COMGEIM)","HQ","1103101014",-6.18121350984762,36.4948557665378
+"cadiz","Base Naval de Rota","base/cuartel","1103003003",-6.33926851293798,36.6396280340191
+"cadiz","Estacion Naval de San Fernando (Cadiz)","base/cuartel","1103101014",-6.18121350984762,36.4948557665378
+"cantabria","Comandancia Naval de Santander","HQ","3907505009",-3.80887498301273,43.4570097805531
+"barcelona","Comandancia Naval de Barcelona","HQ","0801901001",2.17688762245106,41.3766754651236
+"tarragona","Comandancia Naval de Tarragona","HQ","4314805007",1.25035643722792,41.1089296013662
+"alicante","Comandancia Naval de Alicante","HQ","0301401001",-0.478765253568598,38.343384200174
+"valencia","Comandancia Naval de Valencia","HQ","4625011002",-0.330243113131485,39.4550438739613
+"madrid","Escuela de Guerra Naval","formacion","2807905085",-3.67584304556761,40.4709817512694
+"madrid","AGRUMAD","base/cuartel","2807915161",-3.66906564175652,40.4760829872307
+"cadiz","Tercio de Armada (TEAR)","base/cuartel","1103101014",-6.19328485067223,36.4779804788958
+"a coruna","Fuerza de Proteccion de la Armada (FUPRO)","base/cuartel",NA,-8.26186532745184,43.474809849682
+"murcia","Fuerza de Guerra Naval Especial (FGNE)","base/cuartel","3001610022",-1.01173121558007,37.5905256052109
+"cadiz","Estacion Naval de Puntales","base/cuartel","1101210012",-6.26218816804446,36.5077360860317
+"pontevedra","Escuela Naval Militar","formacion","3602601007",-8.70521931736993,42.3942811326949
+"baleares","Comandancia Naval de Palma de Mallorca","HQ","0704002017",2.62226015239937,39.5490745422191
+"baleares","Comandancia Naval de Ibiza","HQ","0702603003",1.43838251553145,38.916732331322
+"baleares","Comandancia Naval de Mahon","HQ","0703205001",4.26751624013489,39.8947719318952
+"las palmas","Comandancia Naval de Las Palmas de Gran Canaria","HQ","3501602037",-15.4185226352398,28.1141641387578
+"santa cruz de tenerife","Comandancia Naval de Santa Cruz de Tenerife","HQ","3803801009",-16.2450469711895,28.4773298351893
+"las palmas","Base Naval Las Palmas","base/cuartel","3501602064",-15.4285381700993,28.1349496756576
+"baleares","Base Naval Mahon","base/cuartel","0703205001",4.26751624013489,39.8947719318952
+"valladolid","42 Grupo de Fuerzas Aereas-Localizacion : Villanubla","base/cuartel","4721701001",-4.85161894481969,41.7130638605345
+"madrid","43 Grupo de Fuerzas Aereas-Localizacion : Torrejon de Ardoz","base/cuartel","2814801019",-3.44713885845924,40.4731016758903
+"madrid","45 Grupo de Fuerzas Aereas-Localizacion : Torrejon de Ardoz","base/cuartel","2814801019",-3.44713885845924,40.4731016758903
+"madrid","47 Grupo Mixto de Fuerzas Aereas-Localizacion : Torrejon de Ardoz","base/cuartel","2814801019",-3.44713885845924,40.4731016758903
+"leon","Academia Basica del Aire (ABA)-Localizacion : Virgen del Camino","formacion","2418901004",-5.6502550271629,42.5850155084265
+"murcia","Academia General del Aire (AGA)-Localizacion : Santiago de la Ribera","formacion","3003501005",-0.805439741974364,37.793171766767
+"navarra","Acuartelamiento Aereo Bardenas-Localizacion : Tudela","base/cuartel",NA,-1.48274779601604,42.1866751970642
+"las palmas","Aerodromo Militar de Lanzarote-Localizacion : San Bartolome (Lanzarote)","otros","3502801002",-13.6117730575322,28.9459627501074
+"baleares","Aerodromo Militar de Pollensa-Localizacion : Port de Pollensa","otros","0704203004",3.10225515844643,39.9081471383414
+"a coruna","Aerodromo Militar de Santiago-Localizacion : Santiago de Compostela","otros","1507806005",-8.42182651581347,42.9008812042088
+"madrid","Agrupacion de la Base Aerea de Cuatro Vientos-Localizacion : Madrid","base/cuartel","2807910221",-3.78440873923684,40.3770720786193
+"madrid","Agrupacion de la Base Aerea de Torrejon-Localizacion : Torrejon de Ardoz","base/cuartel","2814801019",-3.44713885845924,40.4731016758903
+"zaragoza","Agrupacion de la Base Aerea de Zaragoza-Localizacion : Zaragoza","base/cuartel","5029712009",-1.0168903317862,41.6703564825205
+"madrid","Agrupacion del Acuartelamiento Aereo Getafe-Localizacion : Getafe","base/cuartel","2806504012",-3.72005260361191,40.3061402289548
+"sevilla","Agrupacion del Acuartelamiento Aereo Tablada-Localizacion : Tablada","base/cuartel","4109111001",-6.00385767314427,37.3670597658367
+"madrid","Agrupacion del Cuartel General del Ejercito del Aire (ACGEA)-Localizacion : Madrid","HQ","2807909028",-3.7192571845098,40.4339007103265
+"sevilla","Ala 11-Localizacion : Moron de la Frontera","base/cuartel","4101104001",-5.60622308811416,37.1561046573521
+"madrid","Ala 12-Localizacion : Torrejon de Ardoz","base/cuartel","2814801019",-3.44713885845924,40.4731016758903
+"albacete","Ala 14-Localizacion : Albacete","base/cuartel","0200308001",-1.8717414678792,38.9548584865109
+"zaragoza","Ala 15-Localizacion : Zaragoza","base/cuartel","5029712009",-1.0168903317862,41.6703564825205
+"badajoz","Ala 23-Localizacion : Talavera la Real","base/cuartel","0601508009",-6.81526988716967,38.8819883571497
+"zaragoza","Ala 31-Localizacion : Zaragoza","base/cuartel","5029712009",-1.0168903317862,41.6703564825205
+"madrid","Ala 35-Localizacion : Getafe","base/cuartel","2806504012",-3.72005260361191,40.3061402289548
+"valladolid","Ala 37-Localizacion : Villanubla","base/cuartel","4721701001",-4.85161894481969,41.7130638605345
+"las palmas","Ala 46-Localizacion : Telde","base/cuartel","3502606007",-15.3750045208908,27.9362794985315
+"madrid","Ala 48 (803 y 402 Escuadron de Fuerzas Aereas)-Localizacion : Madrid / Getafe","base/cuartel","2806504012",-3.72005260361191,40.3061402289548
+"baleares","Ala 49 / RCC Palma-Localizacion : Palma de Mallorca","base/cuartel","0704004078",2.74855210800916,39.5641805332049
+"granada","Ala 78-Localizacion : Armilla","base/cuartel","1801401003",-3.63113990936581,37.1360668907983
+"malaga","Base Aerea de Malaga-Localizacion : Malaga","base/cuartel","2906711007",-4.48495302479642,36.6605836716643
+"madrid","Centro Cartografico y Fotografico (CECAF)-Localizacion : Madrid *","otros","2807910158",-3.77846418886181,40.3925899048097
+"las palmas","Centro Coordinador de Salvamento de Canarias (RCC Canarias)-Localizacion : Gando","otros","3502606007",-15.3750045208908,27.9362794985315
+"madrid","Centro Coordinador de Salvamento de Madrid (RCC Madrid)-Localizacion : Torrejon de Ardoz","base/cuartel","2814801019",-3.44713885845924,40.4731016758903
+"madrid","Centro de Instruccion de Medicina Aeroespacial (CIMA)-Localizacion : Torrejon de Ardoz","base/cuartel","2814801019",-3.44713885845924,40.4731016758903
+"madrid","Centro de Sistemas Aeroespaciales de Observacion (CESAEROB)-Localizacion : Torrejon de Ardoz","base/cuartel","2814801019",-3.44713885845924,40.4731016758903
+"madrid","Centro Logistico de Armamento y Experimentacion (CLAEX)-Localizacion : Torrejon de Ardoz","base/cuartel","2814801019",-3.44713885845924,40.4731016758903
+"madrid","Centro Logistico de Intendencia (CLOIN)-Localizacion : Torrejon de Ardoz","base/cuartel","2814801019",-3.44713885845924,40.4731016758903
+"madrid","Centro Logistico de Material de Apoyo (CLOMA)-Localizacion : Getafe *","base/cuartel","2806504012",-3.72005260361191,40.3061402289548
+"madrid","Centro Logistico de Transmisiones (CLOTRA)-Localizacion : Getafe","base/cuartel","2806504012",-3.72005260361191,40.3061402289548
+"zaragoza","Componente Nacional del Centro Europeo de Transporte Aereo Tactico (CN-ETAC)-Localizacion : Zaragoza","base/cuartel","5029712009",-1.0168903317862,41.6703564825205
+"albacete","Componente Nacional Tactical Leadership Programme (CN-TLP)-Localizacion : Albacete","base/cuartel","0200308001",-1.8717414678792,38.9548584865109
+"zaragoza","Enfermeria del Mando Aereo General (Zaragoza)-Localizacion : Zaragoza","base/cuartel","5029712009",-1.0168903317862,41.6703564825205
+"zaragoza","Escuadron de Apoyo al Despliegue Aereo (EADA)-Localizacion : Zaragoza","base/cuartel","5029712009",-1.0168903317862,41.6703564825205
+"madrid","Escuadron de Ensenanza de Automocion (EEAUTO)-Localizacion : Getafe","base/cuartel","2806504012",-3.72005260361191,40.3061402289548
+"zaragoza","Escuadron de Vigilancia Aerea n1 (EVA 1) y Acuartelamiento Aereo El Frasno-Localizacion : El Frasno","base/cuartel","5011001001",-1.49514208371832,41.4072908856195
+"a coruna","Escuadron de Vigilancia Aerea n10 (EVA 10) y Acuartelamiento Aereo Barbanza-Localizacion : Noya","base/cuartel","1504201002",-8.92186540549903,42.7218343012606
+"cadiz","Escuadron de Vigilancia Aerea n11 (EVA 11) y Acuartelamiento Aereo Alcala de los Gazules-Localizacion : Alcala de los Gazules","base/cuartel","1100101001",-5.6014193384704,36.4806079337491
+"burgos","Escuadron de Vigilancia Aerea n12 (EVA 12) y Acuartelamiento Aereo Espinosa de los Monteros-Localizacion : Espinosa de los Monteros","base/cuartel","0912401001",-3.64946145836599,43.1798529337151
+"murcia","Escuadron de Vigilancia Aerea n13 (EVA 13) y Acuartelamiento Aereo Sierra Espuna-Localizacion : Totana","base/cuartel","3003901010",-1.57583641356268,37.8634721220095
+"toledo","Escuadron de Vigilancia Aerea n2 (EVA 2) y Acuartelamiento Aereo Villatobas-Localizacion : Villatobas","base/cuartel","4519801001",-3.30324,39.88749
+"las palmas","Escuadron de Vigilancia Aerea n21 (EVA 21)-Localizacion : Vega de San Mateo","base/cuartel","3503301002",-15.57159,27.96308
+"las palmas","Escuadron de Vigilancia Aerea n22 (EVA 22)-Localizacion : Haria (Lanzarote)","base/cuartel","3501001001",-13.52091,29.12016
+"sevilla","Escuadron de Vigilancia Aerea n3 (EVA 3) y Acuartelamiento Aereo Constantina-Localizacion : Constantina","base/cuartel","4103304001",-5.60066,37.92483
+"girona","Escuadron de Vigilancia Aerea n4 (EVA 4) y Acuartelamiento Aereo Rosas-Localizacion : Rosas","base/cuartel","1715202003",3.2422,42.28228
+"alicante","Escuadron de Vigilancia Aerea n5 (EVA 5) y Acuartelamiento Aereo Aitana-Localizacion : Alcoy","base/cuartel","0305701001",-0.2669,38.64965
+"baleares","Escuadron de Vigilancia Aerea n7 (EVA 7) y Acuartelamiento Aereo Puig Mayor-Localizacion : Soller","base/cuartel","0701901001",2.79382,39.80761
+"granada","Escuadron de Vigilancia Aerea n9 (EVA 9) y Acuartelamiento Aereo Motril-Localizacion : Motril","base/cuartel","1814005006",-3.41685,36.74365
+"murcia","Escuadron de Zapadores Paracaidistas (EZAPAC)-Localizacion : Alcantarilla","base/cuartel","3003007033",-1.22999015848078,37.9583469260476
+"madrid","Escuela de Tecnicas Aeronauticas (ESTAER)-Localizacion : Torrejon de Ardoz","base/cuartel","2814801019",-3.44713885845924,40.4731016758903
+"madrid","Escuela de Tecnicas de Mando, Control y Telecomunicaciones (EMACOT)-Localizacion : Madrid","formacion","2807910221",-3.80343405499363,40.3681921626348
+"zaragoza","Escuela de Tecnicas de Seguridad, Defensa y Apoyo (ETESDA)-Localizacion : Zaragoza","formacion","5029712009",-1.05376828544346,41.6548327624252
+"murcia","Escuela Militar de Paracaidismo Mendez Parada-Localizacion : Sangonera la Seca","formacion","3003007025",-1.2269539959343,37.9591430901603
+"madrid","Grupo Central de Mando y Control (GRUCEMAC)-Localizacion : Torrejon de Ardoz","base/cuartel","2814801019",-3.44713885845924,40.4731016758903
+"las palmas","Grupo de Alerta y Control (GRUALERCON)-Localizacion : Gando","base/cuartel","3502606007",-15.3750045208908,27.9362794985315
+"madrid","Grupo de Automoviles (GRUAUT)-Localizacion : Getafe","base/cuartel","2806504012",-3.72005260361191,40.3061402289548
+"salamanca","Grupo de Escuelas de Matacan (GRUEMA)-Localizacion : Villagonzalo de Tormes","base/cuartel","3735201001",-5.4902880000852,40.94622250697
+"las palmas","Grupo del Cuartel General del Mando Aereo de Canarias-Localizacion : Las Palmas de Gran Canaria","HQ","3501602051",-15.4307752116425,28.1215469415647
+"madrid","Grupo de Transmisiones (GRUTRA)-Localizacion : Getafe","base/cuartel","2806504012",-3.72005260361191,40.3061402289548
+"sevilla","Grupo Movil de Control Aereo (GRUMOCA)-Localizacion : Sevilla","HQ","4109111001",-6.00376738924261,37.3669655783513
+"zaragoza","Grupo Norte de Mando y Control (GRUNOMAC)-Localizacion : Zaragoza","HQ","5029712009",-1.0168903317862,41.6703564825205
+"madrid","Jefatura del Sistema de Mando y Control (JSMC)-Localizacion : Torrejon de Ardoz","base/cuartel","2814801019",-3.44713885845924,40.4731016758903
+"zaragoza","Jefatura de Movilidad Aerea (JMOVA)-Localizacion : Zaragoza","HQ","5029712009",-1.0168903317862,41.6703564825205
+"albacete","Maestranza Aerea de Albacete (MAESAL)-Localizacion : Albacete","base/cuartel","0200308001",-1.86518667102265,38.9530647338675
+"madrid","Maestranza Aerea de Madrid (MAESMA)-Localizacion : Madrid","base/cuartel","2807910221",-3.78798257118883,40.3753112002508
+"sevilla","Maestranza Aerea de Sevilla (MAESE)-Localizacion : Tablada","base/cuartel","4109111001",-6.00385767314427,37.3670597658367
+"las palmas","Mando Aereo de Canarias (MACAN)-Localizacion : Las Palmas de Gran Canaria","HQ","3501602051",-15.4307752116425,28.1215469415647
+"madrid","Mando Aereo de Combate (MACOM)-Localizacion : Torrejon de Ardoz","HQ","2814801019",-3.44713885845924,40.4731016758903
+"madrid","Mando Aereo General (MAGEN)-Localizacion : Madrid","HQ","2807909028",-3.7192571845098,40.4339007103265
+"madrid","Mando de Apoyo Logistico (MALOG)-Localizacion : Madrid","HQ","2806504012",-3.71936124106615,40.3077148865045
+"sevilla","Segundo Escuadron de Apoyo al Despliegue Aereo (SEADA)-Localizacion : Moron de la Frontera","HQ","5029712009",-1.0168903317862,41.6703564825205
+"madrid","Unidad Medica Aerea de Apoyo al Despliegue (UMAAD-Madrid)-Localizacion : Torrejon de Ardoz","otros","2814801019",-3.44713885845924,40.4731016758903
+"zaragoza","Unidad Medica Aerea de Apoyo al Despliegue (UMAAD-Zaragoza)-Localizacion : Zaragoza","otros","5029712009",-1.0168903317862,41.6703564825205
+"madrid","Unidad Medica de Aeroevacuacion (UMAER)-Localizacion : Torrejon de Ardoz","base/cuartel","2814801019",-3.44713885845924,40.4731016758903
