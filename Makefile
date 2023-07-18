@@ -16,7 +16,7 @@ extra: cuarteles1920/output/c1920_CUSEC.csv c1920_models/c1920_models.Rout cses/
 
 ## > clean	 : remove all output files
 clean:
-	rm -rfv download_shp
+	# rm -rfv download_shp
 	rm -rfv */output
 	rm -fv */*.Rout
 
@@ -104,6 +104,7 @@ cuarteles1920/output/c1920_CUSEC.csv: cuarteles1920/overlay.R input_data/cuartel
 
 descriptives/desc.Rout: descriptives/desc.R func/raincloud_func.R download_shp/shp_provincias/gadm36_ESP_2.shp create_dataset/output/dataset.csv download_shp/shp_secciones_2019/SECC_CE_20190101.shp input_data/cuarteles.csv
 	mkdir -p $(@D)
+	mkdir -p $(@D)/output
 	Rscript --no-save --verbose $< 2>&1 | tee $<out
 	find ./descriptives/output -name "*map*" -exec pdfcrop {} {} \;
 
