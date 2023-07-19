@@ -1,66 +1,68 @@
 # README
 
-### Replication files for "Rally 'round the barrack: Far-right support and the military", by Francisco Villamil, Stuart J. Turnbull-Dugarte, and José Rama.
+## Replication files for "Rally 'round the barrack: Far-right support and the military", by Francisco Villamil, Stuart J. Turnbull-Dugarte, and José Rama.
 
-This folder includes all the necessary materials to replicate the results from both the main Article and the Online Appendix. Most of them have been run using R 3.6 on macOS 12.3. We include the output from `sessionInfo()` at the end of this readme file. **NOTE:** The spatial analyses are computationally expensive and need a lot of RAM. We run it on a Google Cloud VM instance (e2-highmem-16, 128 GB RAM), and took around 72h. Without the spatial analyses, the code just takes a few minutes to build.
+This folder includes all the necessary materials to replicate the results from both the main Article and the Online Appendix. Most of them have been run using R 4.3 on macOS 12.3. We include the output from `sessionInfo()` at the end of this readme file. **NOTE:** The spatial analyses are computationally expensive and need a lot of RAM. We run it on a Google Cloud VM instance (e2-highmem-16, 128 GB RAM), and took around 72h. Without the spatial analyses, the code just takes a few minutes to build.
 
 The code is organized in tasks that depend on the results of the previous ones. All the code is self-contained. Each folder contains the code and the output of one task. The taskflow is as follows:
 
 ![taskflow](taskflow/workflow.jpeg)
 
-In addition, there is an additional task (`cses`) that is self-contained.
+In addition, there is an additional task ([`cses`](.)) that is self-contained.
 
 ---
 
-#### Raw data files
+### Raw data files
 
-There are two types of raw files that are needed to run the analyses. The `download_shp` contains shapefiles for Spanish provinces and census sections, while the `input_data` folder contains a set of files that were previously downloaded or created:
+There are two types of raw files that are needed to run the analyses. The [`download_shp`](.) folder contains shapefiles for Spanish provinces and census sections, while the [`input_data`](.) folder contains a set of files that were previously downloaded or created:
 
-- `barometers_full.csv`: individual-level dataset that contains all surveys (monthly barometers) merged, which is used in the individual-level analyses. We define its variables in the separate codebook.
-- `cuarteles.csv`: location of military facilities in Spain, coded as explained in the main paper
-- `cuarteles1920.csv`: location of military facilities in Spain in 1920, coded from historical archives as explained in the main paper and in the Online Appendix
-- `INE_census.csv`: census data for all Spanish municipalities, see [this repository](https://github.com/franvillamil/scrap-INE-census)
-- `results1936.csv`: electoral results from 1936 elections, from replication data from Villamil (2021)
-- `secc_censal_indic_demograficos.csv`: demographic data at the census section-level
-- `secc_censal_renta.csv`: income data at the census section-level
-- `ZA2391_v13-0-0.dta.zip`: Politbarometer data, obtained from the GESIS website ([https://search.gesis.org/research_data/ZA2391](https://search.gesis.org/research_data/ZA2391))
-- `cses_imd_csv.zip`: CSES data, downloaded from [https://cses.org/wp-content/uploads/2020/12/cses_imd_csv.zip](https://cses.org/wp-content/uploads/2020/12/cses_imd_csv.zip)
+- [`barometers_full.csv`](.): individual-level dataset that contains all surveys (monthly barometers) merged, which is used in the individual-level analyses. We define its variables in the separate codebook.
+- [`cuarteles.csv`](.): location of military facilities in Spain, coded as explained in the main paper
+- [`cuarteles1920.csv`](.): location of military facilities in Spain in 1920, coded from historical archives as explained in the main paper and in the Online Appendix
+- [`INE_census.csv`](.): census data for all Spanish municipalities, see [this repository](https://github.com/franvillamil/scrap-INE-census)
+- [`results1936.csv`](.): electoral results from 1936 elections, from replication data from [Villamil (2021)](https://journals.sagepub.com/doi/10.1177/0022343320912816)
+- [`secc_censal_indic_demograficos.csv`](.): demographic data at the census section-level
+- [`secc_censal_renta.csv`](.): income data at the census section-level
+- [`ZA2391_v13-0-0.dta.zip`](.): Politbarometer data, obtained from the GESIS website ([https://search.gesis.org/research_data/ZA2391](https://search.gesis.org/research_data/ZA2391))
+- [`cses_imd_csv.zip`](.): CSES data, downloaded from [cses.org](https://cses.org/wp-content/uploads/2020/12/cses_imd_csv.zip)
 
-In addition, the `func` folder contains a set of R functions predefined that are used throghout the code.
+In addition, the [`func`](.) folder contains a set of R functions predefined that are used throghout the code.
 
 ---
 
-#### Running the code and replicating results
+### Running the code and replicating results
+
+When running the scripts, any order is fine as long as it respects the taskflow above. Also, it is possible to run separate scripts or to use `make` to run the whole project (notes on this below). We present here an order that **creates the datasets**, runs the **main analyses** and the **extra analyses**. Every task corresponds to a folder that includes only one **.R file** and an **output** folder (if it's not there or is deleted, you might have to create it before running the R code). The R files read from the output folders of previous tasks.
 
 **Data creation:**
 
-- `download_elections`
-- `spatial_overlay`
-- `cuarteles1920`
-- `distance_matrix`
-- `spatial_lags`
-- `create_dataset`: creates the final dataset used in the local-level analyses
-- `slm_datajoin`: merges the data frame with the spatial features and creates the object needed for the spatial models
+- [`download_elections`](.): downloads the electoral data from Spain, using the `infoelectoral` package
+- [`spatial_overlay`](.): performs the spatial overlay between the military facilities dataset and the census sections shapefile
+- [`cuarteles1920`](.): does the same spatial overlay as above but using the dataset on military facilities existing in 1920
+- [`distance_matrix`](.): calculates distance between military facilities and census sections
+- [`spatial_lags`](.): creates the neigboring matrices between different census sections
+- [`create_dataset`](.): creates the final dataset used in the local-level analyses
+- [`slm_datajoin`](.): merges the data frame with the spatial features and creates the object needed for the spatial models
 
 **Main analyses:**
 
-- `survey_analyses`: runs the individual-level analyses
-- `lm`: runs the main local-level models
-- `lm_diff`: runs the local-level linear models on diffusion
-- `slm`: runs the spatial models. Contains three R scripts (`slm_invd.R` and `slm_nb.R`), which correspond to the models that use inverse distance and neighboring (contiguous and within 2km) matrices.
-- `slm_tables`: creates tables out of the output from the spatial models.
-- `cses`: runs the analyses on cross-country differences using the data from CSES
+- [`survey_analyses`](.): runs the individual-level analyses
+- [`lm`](.): runs the main local-level models
+- [`lm_diff`](.): runs the local-level linear models on diffusion
+- [`slm`](.): runs the spatial models. Contains three R scripts (`slm_invd.R`](.) and [`slm_nb.R`), which correspond to the models that use inverse distance and neighboring (contiguous and within 2km) matrices.
+- [`slm_tables`](.): creates tables out of the output from the spatial models.
+- [`cses`](.): runs the analyses on cross-country differences using the data from CSES
 
 **Extra:**
 
-- `descriptives`
-- `c1920_models`
-- `politbarometer`
+- [`descriptives`](.): runs the descriptives statistics and graphs, including maps and summary statistics
+- [`c1920_models`](.): runs the models using the 1920 data on military facilities, included in Appendix I
+- [`politbarometer`](.): runs the analyses using survey data from the Politbarometer in Germany, included in Appendix K
 
 
-#### Using `make`
+### Using `make`
 
-From the command line (Unix/macOS), the following script will download the repository, clean up all output files, and run all scripts again. By default, `make` (or `make all`) will run everything but the memory-intensity spatial analyses. `make really_all` runs the whole project. (Check `make help`.)
+From the command line (Unix/macOS), the following script will download the repository, clean up all output files, and run all scripts again. By default, [`make`](.) (or [`make all`) will run everything but the memory-intensity spatial analyses. [`make really_all`](.) runs the whole project. (Check [`make help`.)
 
 ```shell
 git clone https://github.com/franvillamil/vox_military
@@ -69,15 +71,15 @@ make clean
 make really_all
 ```
 
-*Note*, however, that these analyses contain a lot of spatial data manipulation and analyses, and it is not uncommon that there are problems with spatial libraries when running these scripts, particularly when using `Rscript`.
+*Note*, however, that these analyses contain a lot of spatial data manipulation and analyses, and it is not uncommon that there are problems with spatial libraries when running these scripts, particularly when using [`Rscript`].
 
 ---
 
-#### OS and software
+### OS and software
 
 Most of the analyses can be run on a normal computer. We have used R 4.3.1 on a 2015 MacBook Pro with 16GB of memory (on macOS Monterey).
 
-One task (the spatial analyses in `slm`), however, requires much more memory and might not be suitable in a normal computer. This applies to two R scripts, `slm/slm_invd.R` and `slm/slm_nb.R`. In our case, we run them on a Google Cloud VM instance (e2-highmem-16, 128 GB RAM), and took around 72h.
+One task (the spatial analyses in `slm`), however, requires much more memory and might not be suitable in a normal computer. This applies to two R scripts, [`slm/slm_invd.R`](.) and [`slm/slm_nb.R`](.). In our case, we run them on a Google Cloud VM instance (e2-highmem-16, 128 GB RAM), and took around 72h.
 
 This is the `sessionInfo()` output in thel local computer after running `distance.R`:
 
