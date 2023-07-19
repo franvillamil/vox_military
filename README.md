@@ -34,6 +34,8 @@ In addition, the [`func`](.) folder contains a set of R functions predefined tha
 
 When running the scripts, any order is fine as long as it respects the taskflow above. Also, it is possible to run separate scripts or to use `make` to run the whole project (notes on this below). We present here an order that **creates the datasets**, runs the **main analyses** and the **extra analyses**. Every task corresponds to a folder that includes only one **.R file** and an **output** folder (if it's not there or is deleted, you might have to create it before running the R code). The R files read from the output folders of previous tasks.
 
+**Note:** the `setwd` command is commented out in every file. Remember to change it to the current directory, unless you're using `make`.
+
 **Data creation:**
 
 - [`download_elections`](.): downloads the electoral data from Spain, using the `infoelectoral` package
