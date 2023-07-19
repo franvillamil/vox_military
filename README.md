@@ -41,7 +41,7 @@ There are two types of raw files that are needed to run the analyses. The [`down
 - [`results1936.csv`](.): electoral results from 1936 elections, from replication data from [Villamil (2021)](https://journals.sagepub.com/doi/10.1177/0022343320912816)
 - [`secc_censal_indic_demograficos.csv`](.): demographic data at the census section-level
 - [`secc_censal_renta.csv`](.): income data at the census section-level
-- [`ZA2391_v13-0-0.dta.zip`](.): Politbarometer data, obtained from the GESIS website ([https://search.gesis.org/research_data/ZA2391](https://search.gesis.org/research_data/ZA2391))
+- [`ZA2391_v13-0-0.dta.zip`](.): Politbarometer data, obtained from the [GESIS website](https://search.gesis.org/research_data/ZA2391)
 - [`cses_imd_csv.zip`](.): CSES data, downloaded from [cses.org](https://cses.org/wp-content/uploads/2020/12/cses_imd_csv.zip)
 
 In addition, the [`func`](.) folder contains a set of R functions predefined that are used throghout the code.
