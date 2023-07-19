@@ -29,7 +29,14 @@ In addition, the `func` folder contains a set of R functions predefined that are
 
 #### Using `make`
 
+From the command line (Unix/macOS), the following script will download the repository, clean up all output files, and run all scripts again. (By default, `make` [or `make all`] will run everything but the memory-intensity spatial analyses.)
 
+```shell
+git clone https://github.com/franvillamil/vox_military
+cd vox_military
+make clean
+make really_all
+```
 
 ---
 
@@ -38,12 +45,12 @@ In addition, the `func` folder contains a set of R functions predefined that are
 **Data creation:**
 
 - `download_elections`
+- `spatial_overlay`
+- `cuarteles1920`
 - `distance_matrix`
 - `spatial_lags`
-- `spatial_overlay`
-- `create_dataset`
-- `slm_datajoin`
-- `cuarteles1920`
+- `create_dataset`: creates the final dataset used in the local-level analyses
+- `slm_datajoin`: merges the data frame with the spatial features and creates the object needed for the spatial models
 
 **Main analyses:**
 
@@ -64,5 +71,41 @@ In addition, the `func` folder contains a set of R functions predefined that are
 ---
 
 #### OS and software
+
+Most of the analyses can be run on a normal computer. We have used R 4.3.1 on a 2015 MacBook Pro with 16GB of memory (on macOS Monterey).
+
+
+`r6a.2xlarge` AWS instance
+
+
+This is the `sessionInfo()` output after running `distance.R`:
+
+```
+R version 4.3.1 (2023-06-16)
+Platform: x86_64-apple-darwin20 (64-bit)
+Running under: macOS Monterey 12.3.1
+
+Matrix products: default
+BLAS:   /Library/Frameworks/R.framework/Versions/4.3-x86_64/Resources/lib/libRblas.0.dylib
+LAPACK: /Library/Frameworks/R.framework/Versions/4.3-x86_64/Resources/lib/libRlapack.dylib;  LAPACK version 3.11.0
+
+locale:
+[1] en_US.UTF-8/UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
+
+time zone: Europe/Madrid
+tzcode source: internal
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base
+
+other attached packages:
+[1] rgeos_0.6-4 rgdal_1.6-7 sp_2.0-0    dplyr_1.1.2 tidyr_1.3.0
+
+loaded via a namespace (and not attached):
+ [1] vctrs_0.6.3        cli_3.6.1          rlang_1.1.1        KernSmooth_2.23-21 DBI_1.1.3          purrr_1.0.1        generics_0.1.3     sf_1.0-14          glue_1.6.2         e1071_1.7-13       fansi_1.0.4
+[12] grid_4.3.1         classInt_0.4-9     tibble_3.2.1       lifecycle_1.0.3    compiler_4.3.1     Rcpp_1.0.11        pkgconfig_2.0.3    lattice_0.21-8     R6_2.5.1           class_7.3-22       tidyselect_1.2.0
+[23] utf8_1.2.3         pillar_1.9.0       magrittr_2.0.3     tools_4.3.1        proxy_0.4-27       units_0.8-2
+```
+
 
 **Note:** `devtools::install_github("r-lib/svglite")`

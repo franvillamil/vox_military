@@ -1,7 +1,7 @@
-# setwd("~/Documents/Projects/cuarteles_militares")
+# setwd("~/Documents/Projects/vox_military_jop")
 options(stringsAsFactors = FALSE)
 # List of packages
-pkg = c("rgdal", "rgeos", "spdep", "tidyr", "dplyr", "stringr")
+pkg = c("rgdal", "rgeos", "spdep", "tidyr", "dplyr", "stringr", "raster")
 # Checks if they are installed, install if not
 if (length(setdiff(pkg, rownames(installed.packages()))) > 0) {
   install.packages(setdiff(pkg, rownames(installed.packages())))}
