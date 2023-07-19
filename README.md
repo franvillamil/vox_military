@@ -12,6 +12,24 @@ In addition, there is an additional task ([`cses`](.)) that is self-contained.
 
 ---
 
+### Files correspoding to tables and figures in main text
+
+- Table 1: `survey_analyses/output/tab_survey_freq.tex`
+- Table 2: `survey_analyses/output/tab_survey_models.tex`
+- Table 3: `lm/output/tab_base.tex`
+- Table 4: `lm_diff/output/tab_lm_diff.tex`
+- Table 5: `lm_diff/output/tab_lm_diff_int.tex`
+- Table 6: `slm_tables/output/tab_sem.tex`
+- Table 7: `slm_tables/output/tab_sdem.tex`
+- Table 8: `cses/output/tab_cses.tex`
+- Figure 1: `survey_analyses/output/sim_mil_gap_ideo.pdf`
+- Figure 2: `descriptives/output/cuarteles_map.pdf`
+- Figure 3: `descriptives/output/rainplot_army_a19.pdf` & `rainplot_army_n19.pdf`
+- Figure 4: `descriptives/output/madrid_map.pdf`
+- Figure 5: `lm_diff/output/diff_int_pp.pdf` & `diff_int_ild_pp.pdf`
+
+---
+
 ### Raw data files
 
 There are two types of raw files that are needed to run the analyses. The [`download_shp`](.) folder contains shapefiles for Spanish provinces and census sections, while the [`input_data`](.) folder contains a set of files that were previously downloaded or created:
