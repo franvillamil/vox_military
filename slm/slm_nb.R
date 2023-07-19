@@ -1,4 +1,4 @@
-# setwd("~/Documents/Projects/cuarteles_militares")
+# setwd("~/Documents/Projects/vox_military_jop")
 options(stringsAsFactors = FALSE)
 # List of packages
 pkg = c("spdep", "rgdal", "rgeos", "geosphere", "ggplot2",

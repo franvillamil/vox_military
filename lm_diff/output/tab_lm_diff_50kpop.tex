@@ -1,0 +1,41 @@
+
+% Table created by stargazer v.5.2.3 by Marek Hlavac, Social Policy Institute. E-mail: marek.hlavac at gmail.com
+% Date and time: Wed, Jul 19, 2023 - 10:13:29
+% Requires LaTeX packages: dcolumn 
+\begin{table}[!htbp] \centering 
+  \caption{Support for VOX and nearby military presence, only sections in municipalities of more than 50000 inhabitants} 
+  \label{tab:lm_diff_50kpop} 
+\small 
+\begin{tabular}{@{\extracolsep{-20pt}}lD{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} } 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+\\[-1.8ex] & \multicolumn{1}{c}{(1)} & \multicolumn{1}{c}{(2)} & \multicolumn{1}{c}{(3)}\\ 
+\hline \\[-1.8ex] 
+ (Intercept) & -0.763^{***} & -0.762^{***} & -0.811^{***} \\ 
+  & (0.021) & (0.021) & (0.021) \\ 
+  Military in contiguous section & 0.015^{***} &  &  \\ 
+  & (0.001) &  &  \\ 
+  Military within 2km &  & 0.006^{***} &  \\ 
+  &  & (0.001) &  \\ 
+  Inverse logged distance (m) &  &  & 0.260^{***} \\ 
+  &  &  & (0.025) \\ 
+  Turnout & -0.109^{***} & -0.109^{***} & -0.111^{***} \\ 
+  & (0.006) & (0.006) & (0.006) \\ 
+  (Log) Population & 0.003^{***} & 0.005^{***} & 0.005^{***} \\ 
+  & (0.001) & (0.001) & (0.001) \\ 
+  (Log) HH Income & 0.017^{***} & 0.016^{***} & 0.017^{***} \\ 
+  & (0.001) & (0.001) & (0.001) \\ 
+  (Log) Municipality population & 0.078^{***} & 0.077^{***} & 0.078^{***} \\ 
+  & (0.001) & (0.001) & (0.001) \\ 
+  Military region HQ & -0.056^{***} & -0.056^{***} & -0.058^{***} \\ 
+  & (0.004) & (0.004) & (0.004) \\ 
+ \hline \\[-1.8ex] 
+Province FE & \multicolumn{1}{c}{Yes} & \multicolumn{1}{c}{Yes} & \multicolumn{1}{c}{Yes} \\ 
+Observations & \multicolumn{1}{c}{9,973} & \multicolumn{1}{c}{9,973} & \multicolumn{1}{c}{9,973} \\ 
+R$^{2}$ & \multicolumn{1}{c}{0.700} & \multicolumn{1}{c}{0.697} & \multicolumn{1}{c}{0.698} \\ 
+Adjusted R$^{2}$ & \multicolumn{1}{c}{0.699} & \multicolumn{1}{c}{0.696} & \multicolumn{1}{c}{0.697} \\ 
+\hline 
+\hline \\[-1.8ex] 
+\multicolumn{4}{c}{\parbox[t]{0.65\textwidth}{\textit{Note:} $+ p<0.1; * p<0.05; ** p<0.01; *** p<0.001$. All models exclude census sections with army facilities from the sample. Only including sections in municipalities with more than 50000 inhabitants.}} \\ 
+\end{tabular} 
+\end{table} 

@@ -24,23 +24,13 @@ There are two types of raw files that are needed to run the analyses. The `downl
 - `secc_censal_indic_demograficos.csv`: demographic data at the census section-level
 - `secc_censal_renta.csv`: income data at the census section-level
 - `ZA2391_v13-0-0.dta.zip`: Politbarometer data, obtained from the GESIS website ([https://search.gesis.org/research_data/ZA2391](https://search.gesis.org/research_data/ZA2391))
+- `cses_imd_csv.zip`: CSES data, downloaded from [https://cses.org/wp-content/uploads/2020/12/cses_imd_csv.zip](https://cses.org/wp-content/uploads/2020/12/cses_imd_csv.zip)
 
 In addition, the `func` folder contains a set of R functions predefined that are used throghout the code.
 
-#### Using `make`
-
-From the command line (Unix/macOS), the following script will download the repository, clean up all output files, and run all scripts again. (By default, `make` [or `make all`] will run everything but the memory-intensity spatial analyses.)
-
-```shell
-git clone https://github.com/franvillamil/vox_military
-cd vox_military
-make clean
-make really_all
-```
-
 ---
 
-#### R code
+#### Running the code and replicating results
 
 **Data creation:**
 
@@ -54,12 +44,12 @@ make really_all
 
 **Main analyses:**
 
-- `lm`
-- `lm_diff`
-- `slm`
-- `slm_tables`
-- `survey_analyses`
-- `cses`
+- `survey_analyses`: runs the individual-level analyses
+- `lm`: runs the main local-level models
+- `lm_diff`: runs the local-level linear models on diffusion
+- `slm`: runs the spatial models. Contains three R scripts (`slm_invd.R` and `slm_nb.R`), which correspond to the models that use inverse distance and neighboring (contiguous and within 2km) matrices.
+- `slm_tables`: creates tables out of the output from the spatial models.
+- `cses`: runs the analyses on cross-country differences using the data from CSES
 
 **Extra:**
 
@@ -68,17 +58,28 @@ make really_all
 - `politbarometer`
 
 
+#### Using `make`
+
+From the command line (Unix/macOS), the following script will download the repository, clean up all output files, and run all scripts again. By default, `make` (or `make all`) will run everything but the memory-intensity spatial analyses. `make really_all` runs the whole project. (Check `make help`.)
+
+```shell
+git clone https://github.com/franvillamil/vox_military
+cd vox_military
+make clean
+make really_all
+```
+
+*Note*, however, that these analyses contain a lot of spatial data manipulation and analyses, and it is not uncommon that there are problems with spatial libraries when running these scripts, particularly when using `Rscript`.
+
 ---
 
 #### OS and software
 
 Most of the analyses can be run on a normal computer. We have used R 4.3.1 on a 2015 MacBook Pro with 16GB of memory (on macOS Monterey).
 
+One task (the spatial analyses in `slm`), however, requires much more memory and might not be suitable in a normal computer. This applies to two R scripts, `slm/slm_invd.R` and `slm/slm_nb.R`. In our case, we run them on a Google Cloud VM instance (e2-highmem-16, 128 GB RAM), and took around 72h.
 
-`r6a.2xlarge` AWS instance
-
-
-This is the `sessionInfo()` output after running `distance.R`:
+This is the `sessionInfo()` output in thel local computer after running `distance.R`:
 
 ```
 R version 4.3.1 (2023-06-16)
@@ -106,6 +107,3 @@ loaded via a namespace (and not attached):
 [12] grid_4.3.1         classInt_0.4-9     tibble_3.2.1       lifecycle_1.0.3    compiler_4.3.1     Rcpp_1.0.11        pkgconfig_2.0.3    lattice_0.21-8     R6_2.5.1           class_7.3-22       tidyselect_1.2.0
 [23] utf8_1.2.3         pillar_1.9.0       magrittr_2.0.3     tools_4.3.1        proxy_0.4-27       units_0.8-2
 ```
-
-
-**Note:** `devtools::install_github("r-lib/svglite")`

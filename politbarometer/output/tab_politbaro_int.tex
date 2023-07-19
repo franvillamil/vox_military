@@ -1,0 +1,32 @@
+\begin{table}[!h]
+
+\caption{Military occupation and vote intention for AfD in Germany\label{tab:glm_politbaro_int}}
+\centering
+\resizebox{\linewidth}{!}{
+\begin{threeparttable}
+\begin{tabular}[t]{lccccccccc}
+\toprule
+\multicolumn{1}{c}{} & \multicolumn{1}{c}{Pooled} & \multicolumn{1}{c}{2013} & \multicolumn{1}{c}{2014} & \multicolumn{1}{c}{2015} & \multicolumn{1}{c}{2016} & \multicolumn{1}{c}{2017} & \multicolumn{1}{c}{2018} & \multicolumn{1}{c}{2019} & \multicolumn{1}{c}{2020} \\
+\cmidrule(l{3pt}r{3pt}){2-2} \cmidrule(l{3pt}r{3pt}){3-3} \cmidrule(l{3pt}r{3pt}){4-4} \cmidrule(l{3pt}r{3pt}){5-5} \cmidrule(l{3pt}r{3pt}){6-6} \cmidrule(l{3pt}r{3pt}){7-7} \cmidrule(l{3pt}r{3pt}){8-8} \cmidrule(l{3pt}r{3pt}){9-9} \cmidrule(l{3pt}r{3pt}){10-10}
+  & (1) & (2) & (3) & (4) & (5) & (6) & (7) & (8) & (9)\\
+\midrule
+Military & \num{-0.036} & \num{0.537} & \num{0.727}+ & \num{0.525} & \num{0.334} & \num{0.159} & \num{-2.029}* & \num{-0.878} & \num{-0.899}\\
+ & (\num{0.185}) & (\num{0.599}) & (\num{0.439}) & (\num{0.434}) & (\num{0.411}) & (\num{0.429}) & (\num{1.008}) & (\num{0.723}) & (\num{1.014})\\
+Female & \num{-0.956}*** & \num{-0.909}*** & \num{-0.946}*** & \num{-0.935}*** & \num{-0.958}*** & \num{-0.909}*** & \num{-0.910}*** & \num{-1.037}*** & \num{-1.102}***\\
+ & (\num{0.020}) & (\num{0.075}) & (\num{0.061}) & (\num{0.063}) & (\num{0.046}) & (\num{0.049}) & (\num{0.045}) & (\num{0.055}) & (\num{0.069})\\
+Age 40-59 & \num{0.383}*** & \num{0.188}* & \num{0.054} & \num{0.143}+ & \num{0.395}*** & \num{0.485}*** & \num{0.451}*** & \num{0.519}*** & \num{0.581}***\\
+ & (\num{0.026}) & (\num{0.096}) & (\num{0.082}) & (\num{0.086}) & (\num{0.062}) & (\num{0.066}) & (\num{0.061}) & (\num{0.073}) & (\num{0.092})\\
+Age 60+ & \num{0.152}*** & \num{-0.124} & \num{0.013} & \num{-0.117} & \num{0.187}** & \num{0.271}*** & \num{0.150}* & \num{0.344}*** & \num{0.195}*\\
+ & (\num{0.027}) & (\num{0.102}) & (\num{0.083}) & (\num{0.088}) & (\num{0.063}) & (\num{0.067}) & (\num{0.063}) & (\num{0.074}) & (\num{0.095})\\
+\midrule
+$n$ & \num{253403} & \num{40001} & \num{30377} & \num{30051} & \num{30599} & \num{36689} & \num{30394} & \num{28097} & \num{27195}\\
+AIC & \num{103206.1} & \num{7853.2} & \num{10798.8} & \num{10559.2} & \num{16964.0} & \num{16514.8} & \num{17439.1} & \num{13535.9} & \num{9514.0}\\
+Survey FE & Yes & Yes & Yes & Yes & Yes & Yes & Yes & Yes & Yes\\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[para]
+\item \textit{Note: } 
+\item + p $<$ 0.1, * p $<$ 0.05, ** p $<$ 0.01, *** p $<$ 0.001. Military variable refers to ISCO occupation groups 0. Survey FE not shown. Source data: Politbarometer, 2013--2020.
+\end{tablenotes}
+\end{threeparttable}}
+\end{table}

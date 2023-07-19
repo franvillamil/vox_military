@@ -1,0 +1,37 @@
+\begin{table}[!h]
+
+\caption{VOX support in 2019 and military presence at different periods\label{tab:lm\_vox\_c1920}}
+\centering
+\begin{threeparttable}
+\begin{tabular}[t]{lcccc}
+\toprule
+  & (1) & (2) & (3) & (4)\\
+\midrule
+Military facility in 1920 & 0.005 & 0.002 &  & \\
+ & (0.004) & (0.004) &  & \\
+Military facility in 2021 &  & 0.040*** &  & \\
+ &  & (0.003) &  & \\
+Facility in 1920 but abandoned &  &  & 0.000 & -0.043**\\
+ &  &  & (0.004) & (0.015)\\
+(Log) Population, 2017 & 0.006*** & 0.006*** & 0.006*** & -0.020+\\
+ & (0.000) & (0.000) & (0.000) & (0.012)\\
+Military region HQ & -0.014*** & -0.014*** & -0.014*** & -0.030\\
+ & (0.001) & (0.001) & (0.001) & \vphantom{1} (0.021)\\
+(Log) Municipality pop, 2017 & 0.001*** & 0.001*** & 0.001*** & 0.004\\
+ & (0.000) & (0.000) & (0.000) & (0.005)\\
+(Log) Household income, 2017 & 0.023*** & 0.023*** & 0.023*** & 0.091***\\
+ & (0.001) & (0.001) & (0.001) & (0.021)\\
+\midrule
+$n$ & 33905 & 33905 & 33905 & 99\\
+$R^2$ & 0.61 & 0.61 & 0.61 & 0.76\\
+Adj. $R^2$ & 0.61 & 0.61 & 0.61 & 0.68\\
+AIC & -128727.2 & -128887.3 & -128724.9 & -341.8\\
+Province FE & Yes & Yes & Yes & Yes\\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[para]
+\item \textit{Note: } 
+\item + p $<$ 0.1, * p $<$ 0.05, ** p $<$ 0.01, *** p $<$ 0.001. Province FE not shown.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

@@ -1,0 +1,31 @@
+\begin{table}[!h]
+
+\caption{Individual-level analyses on VOX support\label{tab:survey_glm}}
+\centering
+\begin{threeparttable}
+\begin{tabular}[t]{lcccc}
+\toprule
+  & (1) & (2) & (3) & (4)\\
+\midrule
+(Intercept) & -2.282*** & -2.189*** & -5.835*** & -5.837***\\
+ & (0.028) & (0.089) & (0.102) & (0.102)\\
+Military & 1.620*** & 1.282*** & 0.939*** & 1.004**\\
+ & (0.104) & (0.094) & (0.098) & (0.363)\\
+Ideology (left-right) &  &  & 0.722*** & 0.722***\\
+ &  &  & (0.018) & (0.018)\\
+Military $\times$ Ideology &  &  &  & -0.010\\
+ &  &  &  & (0.055)\\
+\midrule
+$n$ & 142703 & 142233 & 122776 & 122776\\
+AIC & 50303.1 & 47704.5 & 33926.3 & 33928.2\\
+Controls & No & Yes & Yes & Yes\\
+Survey FE & Yes & Yes & Yes & Yes\\
+Municipality FE & Yes & Yes & Yes & Yes\\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[para]
+\item \textit{Note: } 
+\item + p $<$ 0.1, * p $<$ 0.05, ** p $<$ 0.01, *** p $<$ 0.001. All models include survey-clustered SE. Controls: gender, age, education level, religion, employment status. Full table in Appendix.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

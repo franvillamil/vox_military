@@ -1,0 +1,27 @@
+
+% Table created by stargazer v.5.2.3 by Marek Hlavac, Social Policy Institute. E-mail: marek.hlavac at gmail.com
+% Date and time: Wed, Jul 19, 2023 - 11:37:05
+% Requires LaTeX packages: dcolumn 
+\begin{table}[!htbp] \centering 
+  \caption{Spatial Error Models on support for VOX} 
+  \label{tab:sem} 
+\small 
+\begin{tabular}{@{\extracolsep{-20pt}}lD{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} } 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+\\[-1.8ex] & \multicolumn{1}{c}{(1)} & \multicolumn{1}{c}{(2)} & \multicolumn{1}{c}{(3)}\\ 
+\hline \\[-1.8ex] 
+ (Intercept) & -0.250^{***} & -0.327^{***} & 5.305^{**} \\ 
+  & (0.010) & (0.010) & (1.839) \\ 
+  Military facility & 0.017^{***} & 0.027^{***} & 0.037^{***} \\ 
+  & (0.002) & (0.003) & (0.003) \\ 
+ \hline \\[-1.8ex] 
+Controls & \multicolumn{1}{c}{Yes} & \multicolumn{1}{c}{Yes} & \multicolumn{1}{c}{Yes} \\ 
+Lambda & \multicolumn{1}{c}{0.89$^{***}$} & \multicolumn{1}{c}{0.91$^{***}$} & \multicolumn{1}{c}{1.00$^{***}$} \\ 
+Observations & \multicolumn{1}{c}{20,181} & \multicolumn{1}{c}{20,181} & \multicolumn{1}{c}{20,181} \\ 
+Akaike Inf. Crit. & \multicolumn{1}{c}{-89,567.300} & \multicolumn{1}{c}{-81,501.060} & \multicolumn{1}{c}{-78,956.110} \\ 
+\hline 
+\hline \\[-1.8ex] 
+\multicolumn{4}{c}{\parbox[t]{0.6\textwidth}{\textit{Note:} $+ p<0.1; * p<0.05; ** p<0.01; *** p<0.001$. Models 1 includes spatial weights based on queen-type contiguity. Model 2 does so identifying neighbors as sections within 2km. Model 3 uses spatial weights based on the inverse logged distance (m). Controls: turnout, logged section population, logged household income, logged municipality population, dummy for military region capital. Full table in Appendix.}} \\ 
+\end{tabular} 
+\end{table} 

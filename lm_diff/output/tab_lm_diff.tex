@@ -1,0 +1,32 @@
+
+% Table created by stargazer v.5.2.3 by Marek Hlavac, Social Policy Institute. E-mail: marek.hlavac at gmail.com
+% Date and time: Wed, Jul 19, 2023 - 10:13:25
+% Requires LaTeX packages: dcolumn 
+\begin{table}[!htbp] \centering 
+  \caption{Support for VOX and nearby military presence} 
+  \label{tab:lm_diff} 
+\small 
+\begin{tabular}{@{\extracolsep{-20pt}}lD{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} } 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+\\[-1.8ex] & \multicolumn{1}{c}{(1)} & \multicolumn{1}{c}{(2)} & \multicolumn{1}{c}{(3)}\\ 
+\hline \\[-1.8ex] 
+ (Intercept) & -0.221^{***} & -0.224^{***} & -0.241^{***} \\ 
+  & (0.006) & (0.006) & (0.006) \\ 
+  Military in contiguous section & 0.016^{***} &  &  \\ 
+  & (0.001) &  &  \\ 
+  Military within 2km &  & 0.007^{***} &  \\ 
+  &  & (0.001) &  \\ 
+  Inverse logged distance (m) &  &  & 0.196^{***} \\ 
+  &  &  & (0.017) \\ 
+ \hline \\[-1.8ex] 
+Controls & \multicolumn{1}{c}{Yes} & \multicolumn{1}{c}{Yes} & \multicolumn{1}{c}{Yes} \\ 
+Province FE & \multicolumn{1}{c}{Yes} & \multicolumn{1}{c}{Yes} & \multicolumn{1}{c}{Yes} \\ 
+Observations & \multicolumn{1}{c}{33,769} & \multicolumn{1}{c}{33,769} & \multicolumn{1}{c}{33,769} \\ 
+R$^{2}$ & \multicolumn{1}{c}{0.616} & \multicolumn{1}{c}{0.615} & \multicolumn{1}{c}{0.615} \\ 
+Adjusted R$^{2}$ & \multicolumn{1}{c}{0.615} & \multicolumn{1}{c}{0.614} & \multicolumn{1}{c}{0.615} \\ 
+\hline 
+\hline \\[-1.8ex] 
+\multicolumn{4}{c}{\parbox[t]{0.65\textwidth}{\textit{Note:} $+ p<0.1; * p<0.05; ** p<0.01; *** p<0.001$. All models exclude census sections with army facilities from the sample. Controls: turnout, logged section population, logged municipality population, dummy for military region capital. Full table in Appendix.}} \\ 
+\end{tabular} 
+\end{table} 

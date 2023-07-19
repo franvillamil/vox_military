@@ -1,4 +1,4 @@
-# setwd("~/Documents/Projects/cuarteles_militares")
+# setwd("~/Documents/Projects/vox_military_jop")
 options(stringsAsFactors = FALSE)
 # List of packages
 pkg = c("tidyr", "dplyr", "purrr", "broom", "kableExtra", "ggplot2")
@@ -26,13 +26,13 @@ tt = function(contvar, binvar, out = "pval"){
 
 
 ## Download CSES csv file, unzip, assign, remove
-url = "https://cses.org/wp-content/uploads/2020/12/cses_imd_csv.zip"
-tmp = tempfile()
-download.file(url, tmp)
-data = read.csv(unzip(tmp, "cses_imd.csv"))
-unlink(tmp)
+# url = "https://cses.org/wp-content/uploads/2020/12/cses_imd_csv.zip"
+# tmp = tempfile()
+# download.file(url, tmp)
+# data = read.csv(unzip(tmp, "cses_imd.csv"))
+# unlink(tmp)
+data = read.csv(unzip("input_data/cses_imd_csv.zip", "cses_imd.csv"))
 file.remove("cses_imd.csv")
-# data = read.csv("~/Downloads/cses_imd.csv")
 
 # Rename, select, etc
 data = data %>%

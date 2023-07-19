@@ -1,4 +1,4 @@
-# setwd("~/Documents/Projects/cuarteles_militares")
+# setwd("~/Documents/Projects/vox_military_jop")
 options(stringsAsFactors = FALSE)
 options("modelsummary_format_numeric_latex" = "plain")
 # List of packages

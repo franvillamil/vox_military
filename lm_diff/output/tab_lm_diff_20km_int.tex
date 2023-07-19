@@ -1,0 +1,47 @@
+
+% Table created by stargazer v.5.2.3 by Marek Hlavac, Social Policy Institute. E-mail: marek.hlavac at gmail.com
+% Date and time: Wed, Jul 19, 2023 - 10:13:30
+% Requires LaTeX packages: dcolumn 
+\begin{table}[!htbp] \centering 
+  \caption{Support for VOX and nearby military presence, only sections within 20km of military facilities} 
+  \label{tab:lm_diff_20km_int} 
+\small 
+\begin{tabular}{@{\extracolsep{-20pt}}lD{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} } 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+\\[-1.8ex] & \multicolumn{1}{c}{(1)} & \multicolumn{1}{c}{(2)} & \multicolumn{1}{c}{(3)}\\ 
+\hline \\[-1.8ex] 
+ (Intercept) & -0.271^{***} & -0.235^{***} & 0.560^{***} \\ 
+  & (0.008) & (0.008) & (0.048) \\ 
+  Military in contiguous section & -0.251^{***} &  &  \\ 
+  & (0.026) &  &  \\ 
+  Military within 2km &  & -0.245^{***} &  \\ 
+  &  & (0.014) &  \\ 
+  Inverse logged distance (m) &  &  & -7.007^{***} \\ 
+  &  &  & (0.394) \\ 
+  (Log) Household income & 0.027^{***} & 0.024^{***} & -0.054^{***} \\ 
+  & (0.001) & (0.001) & (0.005) \\ 
+  Contiguous $\times$ Income & 0.026^{***} &  &  \\ 
+  & (0.002) &  &  \\ 
+  Within 2km $\times$ Income &  & 0.025^{***} &  \\ 
+  &  & (0.001) &  \\ 
+  Inv. dist. $\times$ Income &  &  & 0.692^{***} \\ 
+  &  &  & (0.038) \\ 
+  Turnout & 0.017^{***} & 0.014^{***} & 0.011^{*} \\ 
+  & (0.004) & (0.004) & (0.004) \\ 
+  (Log) Population & 0.009^{***} & 0.010^{***} & 0.010^{***} \\ 
+  & (0.001) & (0.001) & (0.001) \\ 
+  (Log) Municipality population & -0.001^{***} & -0.002^{***} & -0.001^{***} \\ 
+  & (0.000) & (0.000) & (0.000) \\ 
+  Military region HQ & -0.009^{***} & -0.012^{***} & -0.011^{***} \\ 
+  & (0.001) & (0.001) & (0.001) \\ 
+ \hline \\[-1.8ex] 
+Province FE & \multicolumn{1}{c}{Yes} & \multicolumn{1}{c}{Yes} & \multicolumn{1}{c}{Yes} \\ 
+Observations & \multicolumn{1}{c}{20,045} & \multicolumn{1}{c}{20,045} & \multicolumn{1}{c}{20,045} \\ 
+R$^{2}$ & \multicolumn{1}{c}{0.672} & \multicolumn{1}{c}{0.675} & \multicolumn{1}{c}{0.673} \\ 
+Adjusted R$^{2}$ & \multicolumn{1}{c}{0.671} & \multicolumn{1}{c}{0.674} & \multicolumn{1}{c}{0.672} \\ 
+\hline 
+\hline \\[-1.8ex] 
+\multicolumn{4}{c}{\parbox[t]{0.65\textwidth}{\textit{Note:} $+ p<0.1; * p<0.05; ** p<0.01; *** p<0.001$. All models exclude census sections with army facilities from the sample. Only including sections within 20km of military facilities.}} \\ 
+\end{tabular} 
+\end{table} 

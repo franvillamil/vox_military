@@ -1,0 +1,31 @@
+\begin{table}[!h]
+
+\caption{Military occupation and party attachment for AfD in Germany\label{tab:glm_politbaro_att}}
+\centering
+\begin{threeparttable}
+\begin{tabular}[t]{lcccccc}
+\toprule
+\multicolumn{1}{c}{} & \multicolumn{1}{c}{Pooled} & \multicolumn{1}{c}{2016} & \multicolumn{1}{c}{2017} & \multicolumn{1}{c}{2018} & \multicolumn{1}{c}{2019} & \multicolumn{1}{c}{2020} \\
+\cmidrule(l{3pt}r{3pt}){2-2} \cmidrule(l{3pt}r{3pt}){3-3} \cmidrule(l{3pt}r{3pt}){4-4} \cmidrule(l{3pt}r{3pt}){5-5} \cmidrule(l{3pt}r{3pt}){6-6} \cmidrule(l{3pt}r{3pt}){7-7}
+  & (1) & (2) & (3) & (4) & (5) & (6)\\
+\midrule
+Military & \num{-0.064} & \num{1.655}** & \num{-0.427} & \num{-0.837} & \num{-0.594} & \num{-11.906}\\
+ & (\num{0.384}) & (\num{0.530}) & (\num{1.009}) & (\num{1.009}) & (\num{1.011}) & (\num{220.384})\\
+Female & \num{-0.934}*** & \num{-0.933}*** & \num{-0.970}*** & \num{-0.958}*** & \num{-0.796}*** & \num{-1.064}***\\
+ & (\num{0.041}) & (\num{0.113}) & (\num{0.092}) & (\num{0.080}) & (\num{0.080}) & (\num{0.099})\\
+Age 40-59 & \num{0.255}*** & \num{0.008} & \num{0.059} & \num{0.214}* & \num{0.411}*** & \num{0.554}***\\
+ & (\num{0.050}) & (\num{0.133}) & (\num{0.107}) & (\num{0.099}) & (\num{0.108}) & (\num{0.129})\\
+Age 60+ & \num{-0.064} & \num{-0.371}** & \num{-0.250}* & \num{-0.073} & \num{0.198}+ & \num{0.066}\\
+ & (\num{0.052}) & (\num{0.141}) & (\num{0.112}) & (\num{0.102}) & (\num{0.110}) & (\num{0.135})\\
+\midrule
+$n$ & \num{253403} & \num{30599} & \num{36689} & \num{30394} & \num{28097} & \num{27195}\\
+AIC & \num{30592.2} & \num{4134.1} & \num{6278.7} & \num{7597.1} & \num{7120.4} & \num{5385.0}\\
+Survey FE & Yes & Yes & Yes & Yes & Yes & Yes\\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[para]
+\item \textit{Note: } 
+\item + p $<$ 0.1, * p $<$ 0.05, ** p $<$ 0.01, *** p $<$ 0.001. Military variable refers to ISCO occupation groups 0. Survey FE not shown. Source data: Politbarometer, 2013--2020. Models start in 2016 because that is the year when AfD starts to appear in party attachment questions.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

@@ -1,0 +1,42 @@
+\begin{table}[!h]
+
+\caption{Individual-level analyses on VOX support\label{tab:survey_glm}}
+\centering
+\begin{threeparttable}
+\begin{tabular}[t]{lcccc}
+\toprule
+  & (1) & (2) & (3) & (4)\\
+\midrule
+(Intercept) & -2.282*** & -2.189*** & -5.835*** & -5.837***\\
+ & (0.028) & (0.089) & (0.102) & (0.102)\\
+Military & 1.620*** & 1.282*** & 0.939*** & 1.004**\\
+ & (0.104) & (0.094) & (0.098) & (0.363)\\
+Gender (female) &  & -0.804*** & -0.799*** & -0.799***\\
+ &  & (0.048) & (0.045) & (0.045)\\
+Age &  & -0.018*** & -0.020*** & -0.020***\\
+ &  & (0.001) & (0.001) & (0.001)\\
+Education level &  & -0.006 & 0.007 & 0.007\\
+ &  & (0.014) & (0.013) & (0.013)\\
+Employed &  & 0.422*** & 0.572*** & 0.572***\\
+ &  & (0.028) & (0.037) & (0.037)\\
+Unemployed &  & 0.264*** & 0.531*** & 0.531***\\
+ &  & (0.055) & (0.065) & (0.065)\\
+Religious &  & 1.055*** & 0.302*** & 0.302***\\
+ &  & (0.032) & (0.045) & (0.045)\\
+Ideology (left-right) &  &  & 0.722*** & 0.722***\\
+ &  &  & (0.018) & (0.018)\\
+Military $\times$ Ideology &  &  &  & -0.010\\
+ &  &  &  & (0.055)\\
+\midrule
+$n$ & 142703 & 142233 & 122776 & 122776\\
+AIC & 50303.1 & 47704.5 & 33926.3 & 33928.2\\
+Survey FE & Yes & Yes & Yes & Yes\\
+Municipality FE & Yes & Yes & Yes & Yes\\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[para]
+\item \textit{Note: } 
+\item + p $<$ 0.1, * p $<$ 0.05, ** p $<$ 0.01, *** p $<$ 0.001. All models include survey-clustered SE.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

@@ -1,10 +1,10 @@
-# setwd("~/Documents/Projects/cuarteles_militares")
+# setwd("~/Documents/Projects/vox_military_jop")
 options(stringsAsFactors = FALSE)
 options("modelsummary_format_numeric_latex" = "plain")
 # List of packages
 pkg = c("plyr", "dplyr", "stringr", "ggplot2",
   "rgdal", "rgeos", "maptools", "RColorBrewer", "cowplot",
-  "readr", "modelsummary") # "lavaan", "smooth", "Hmisc"
+  "readr", "modelsummary", "kableExtra") # "lavaan", "smooth", "Hmisc"
 # Checks if they are installed, install if not
 if (length(setdiff(pkg, rownames(installed.packages()))) > 0) {
   install.packages(setdiff(pkg, rownames(installed.packages())))}
@@ -70,7 +70,8 @@ shp = readOGR("download_shp/shp_secciones_2019/SECC_CE_20190101.shp",
 shp = shp[shp$NPRO == "Madrid",]
 shp = spTransform(shp, CRS("+init=epsg:4326"))
 prov = readOGR("download_shp/shp_provincias/gadm36_ESP_2.shp", layer = "gadm36_ESP_2")
-prov@data$prov = adapt(prov@data$NAME_2, tolower = TRUE)
+prov@data$prov = tolower(prov@data$NAME_2)
+# prov@data$prov = adapt(prov@data$NAME_2, tolower = TRUE)
 
 ### 1. SUMMARY TABLE
 
