@@ -1,4 +1,4 @@
-# setwd("~/Documents/Projects/vox_military_jop")
+# setwd("~/Desktop/vox_military")
 options(stringsAsFactors = FALSE)
 # List of packages
 pkg = c("stargazer", "dplyr", "ggplot2")
@@ -118,8 +118,7 @@ nd$lwr = nd$y - 1.96 * nd$se
 nd$army_nb = factor(nd$army_nb)
 levels(nd$army_nb) = c("No military facility", "Contiguous military facility")
 
-pdf("lm_diff/output/diff_int_pp.pdf", height = 3.5, width = 3.5)
-ggplot(nd, aes(x = renta_h_2017_l, y = y, group = army_nb)) +
+plot_diff_int_pp = ggplot(nd, aes(x = renta_h_2017_l, y = y, group = army_nb)) +
   geom_line(aes(color = army_nb)) +
   geom_ribbon(aes(ymin = lwr, ymax = upr, fill = army_nb), alpha = 0.2) +
   labs(x = "(Log) Mean household income, 2017", y = "Pr(VOX electoral share)") +
@@ -143,7 +142,13 @@ ggplot(nd, aes(x = renta_h_2017_l, y = y, group = army_nb)) +
     aes(x = renta_h_2017_l), length = unit(0.05, "npc"), color = "#0e80d8",
     alpha = 0.025, sides = "t", inherit.aes = F) +
   scale_y_continuous(expand = c(0, 0.02))
+
+pdf("lm_diff/output/diff_int_pp.pdf", height = 3.5, width = 3.5)
+plot_diff_int_pp
 dev.off()
+
+ggsave("lm_diff/output/diff_int_pp.eps",
+  height = 3.5, width = 3.5, units = "in", device = cairo_ps)
 
 nd_ild = expand.grid(inv_log_dist = seq(min(data$inv_log_dist), max(data$inv_log_dist), 0.01),
   renta_h_2017_l = log(c(1,2,4) * 10000))
@@ -165,9 +170,7 @@ rug_data_ild = subset(m_diff_ild_int$model,
   abs(exp(renta_h_2017_l) - 40000) < 1000)
 rug_data_ild$r = ifelse(rug_data_ild$renta_h_2017_l > 10, "h", "l")
 
-
-pdf("lm_diff/output/diff_int_ild_pp.pdf", height = 3.5, width = 3.5)
-ggplot(subset(nd_ild, !grepl("Medium", renta)),
+diff_int_ild_pp = ggplot(subset(nd_ild, !grepl("Medium", renta)),
     aes(x = inv_log_dist, y = y, group = renta)) +
   geom_line(aes(color = renta)) +
   geom_ribbon(aes(ymin = lwr, ymax = upr, fill = renta), alpha = 0.2) +
@@ -192,7 +195,13 @@ ggplot(subset(nd_ild, !grepl("Medium", renta)),
     aes(x = inv_log_dist), length = unit(0.05, "npc"), color = "#0e80d8",
     alpha = 0.15, sides = "b", inherit.aes = F) +
   scale_y_continuous(expand = c(0, 0.02))
+
+pdf("lm_diff/output/diff_int_ild_pp.pdf", height = 3.5, width = 3.5)
+diff_int_ild_pp
 dev.off()
+
+ggsave("lm_diff/output/diff_int_ild_pp.eps",
+  height = 3.5, width = 3.5, units = "in", device = cairo_ps)
 
 ## Robustness tests, base models
 

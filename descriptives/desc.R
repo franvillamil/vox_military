@@ -1,4 +1,4 @@
-# setwd("~/Documents/Projects/vox_military_jop")
+# setwd("~/Desktop/vox_military")
 options(stringsAsFactors = FALSE)
 options("modelsummary_format_numeric_latex" = "plain")
 # List of packages
@@ -115,6 +115,19 @@ segments(x0 = -0.5, x1 = 4, y0 = 36.75, col = grey(0.5), lwd = 2, lty = "dashed"
 segments(x0 = -1.85, y0 = 36, x1 = -0.5, y1 = 36.75, col = grey(0.5), lwd = 2, lty = "dashed")
 dev.off()
 
+# setEPS()
+# postscript("descriptives/output/cuarteles_map.eps", width = 10, height = 8)
+# plot(prov2, col = "white", border = "grey", lwd = 0.25)
+# plot(c, border = grey(0.5), lwd = 1, add = T)
+# points(x = cuarteles$long2, y = cuarteles$lat2, col = "red", pch = 20)
+# segments(x0 = -1.85, y0 = 34.1, y1 = 36, col = grey(0.5), lwd = 2, lty = "dashed")
+# segments(x0 = -0.5, x1 = 4, y0 = 36.75, col = grey(0.5), lwd = 2, lty = "dashed")
+# segments(x0 = -1.85, y0 = 36, x1 = -0.5, y1 = 36.75, col = grey(0.5), lwd = 2, lty = "dashed")
+# dev.off()
+
+ggsave("descriptives/output/cuarteles_map.eps", device = cairo_ps,
+  height = 10, width = 8, units = "in")
+
 pdf("descriptives/output/cuarteles1920_map.pdf", width = 10, height = 8)
 plot(prov2, col = "white", border = "grey", lwd = 0.25)
 plot(c, border = grey(0.5), lwd = 1, add = T)
@@ -182,6 +195,17 @@ legend("bottomright", bg = "white", inset = 0.05,
   fill = c("white", greens))
 dev.off()
 
+setEPS()
+postscript("descriptives/output/madrid_map.eps")
+par(mar=c(0,0,0,0))
+plot(shp, col = shp$VOX_a19_col, border = alpha("black", 0.3), lwd = 0.1,
+  xlim = c(minlon, maxlon), ylim = c(minlat, maxlat))
+points(x = cuarteles$long, y = cuarteles$lat, col = "red", pch = 20, cex = 2)
+legend("bottomright", bg = "white", inset = 0.05,
+  legend = c("0-5%", "5-10%", "10-15%", "15-20%", "20-25%", "+25%"),
+  fill = c("white", greens))
+dev.off()
+
 ### 4. RAINPLOTS (VOX & MILITARY)
 
 pdf("descriptives/output/rainplot_army_a19.pdf", width = 3.5, height = 4)
@@ -199,6 +223,9 @@ ggplot(subset(data, !is.na(VOX_a19) & !is.na(army)),
   scale_x_discrete(labels = c("No presence", "Military facility")) +
   labs(x = "", y = "VOX electoral share")
 dev.off()
+
+ggsave("descriptives/output/rainplot_army_a19.eps", device = cairo_ps,
+  height = 3.5, width = 4, units = "in")
 
 pdf("descriptives/output/rainplot_army_nb_a19.pdf", width = 3.5, height = 4)
 ggplot(subset(data, !is.na(VOX_a19) & !is.na(army_nb) & army == 0),
@@ -231,6 +258,9 @@ ggplot(subset(data, !is.na(VOX_n19) & !is.na(army)),
   scale_x_discrete(labels = c("No presence", "Military facility")) +
   labs(x = "", y = "VOX electoral share")
 dev.off()
+
+ggsave("descriptives/output/rainplot_army_n19.eps", device = cairo_ps,
+  height = 3.5, width = 4, units = "in")
 
 pdf("descriptives/output/rainplot_army_nb_n19.pdf", width = 3.5, height = 4)
 ggplot(subset(data, !is.na(VOX_n19) & !is.na(army_nb) & army == 0),

@@ -1,4 +1,4 @@
-# setwd("~/Documents/Projects/vox_military")
+# setwd("~/Desktop/vox_military")
 options(stringsAsFactors = FALSE)
 options("modelsummary_format_numeric_latex" = "plain")
 # List of packages
@@ -398,6 +398,8 @@ ggplot(mili_gap, aes(x = factor(ideo), y = mean)) +
   scale_y_continuous(limits = c(-0.07, max(mili_gap$upr) + 1e-05))
 dev.off()
 
+ggsave("survey_analyses/output/sim_mil_gap_ideo.eps",
+  width = 5.5, height = 3, units = "in", device = cairo_ps)
 
 pdf("survey_analyses/output/sim_mil_gap_ideo_ratio.pdf", width = 5.5, height = 3.25)
 ggplot(mili_gap_ratio, aes(x = factor(ideo), y = mean)) +
