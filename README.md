@@ -1,8 +1,8 @@
 **Replication files** for [Francisco Villamil](https://franvillamil.github.io), [Stuart J. Turnbull-Dugarte](https://turnbulldugarte.com/), and [José Rama](https://twitter.com/JoseRamaC) (2024) '[Rally 'round the barrack: Far-right support and the military](https://doi.org/10.1086/727598)'. *The Journal of Politics*, forthcoming.
 
-[[Preprint](https://nbviewer.org/github/franvillamil/franvillamil.github.io/blob/master/files/pubs/preprint_Villamil_TurnbullDugarte_Rama_JOP.pdf)]
-
 > **Abstract:** Despite the importance of authoritarian and nationalist values in military culture, we know little about the link between the military and the far right. In this article we argue that there is an ideological affinity between the military and far-right parties, strengthened by occupational socialization. Moreover, the presence of military institutions also helps mobilizing far-right support among the surrounding population. We test this argument using data from Spain. We show both that military personnel are substantially more likely than civilians to support the far right and that the location of military facilities in Spain is linked to higher far-right support. We also discuss the generalizability of the results and provide tentative evidence that a similar link is likely to be observed in countries where the armed forces have been historically focused on controlling internal dissent and where national sovereignty has been threatened, by either internal or external challengers.
+
+[Preprint](https://nbviewer.org/github/franvillamil/franvillamil.github.io/blob/master/files/pubs/preprint_Villamil_TurnbullDugarte_Rama_JOP.pdf)  / [Google Scholar page](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=G10YqfQAAAAJ&citation_for_view=G10YqfQAAAAJ:Y0pCki6q_DkC)
 
 This folder includes all the necessary materials to replicate the results from both the main Article and the Online Appendix. Most of them have been run using R 4.3 on macOS 12.3. We include the output from `sessionInfo()` at the end of this readme file.
 
