@@ -4,6 +4,20 @@
 
 [Preprint](https://nbviewer.org/github/franvillamil/franvillamil.github.io/blob/master/files/pubs/preprint_Villamil_TurnbullDugarte_Rama_JOP.pdf)  / [Google Scholar page](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=G10YqfQAAAAJ&citation_for_view=G10YqfQAAAAJ:Y0pCki6q_DkC)
 
+```
+ @article{villamilturnbullrama2024,
+   title={Rally’round the barrack: Far-right support and the military},
+   author={Villamil, Francisco and Turnbull-Dugarte, Stuart J and Rama, Jos{\'e}},
+   journal={The Journal of Politics},
+   year={2024},
+   volume={forthcoming},
+   number={},
+   pages={}
+ }
+```
+
+### Instructions
+
 This folder includes all the necessary materials to replicate the results from both the main Article and the Online Appendix. Most of them have been run using R 4.3 on macOS 12.3. We include the output from `sessionInfo()` at the end of this readme file.
 
 **NOTE:** The spatial analyses are computationally expensive and need a lot of RAM. We run it on a Google Cloud VM instance (e2-highmem-16, 128 GB RAM), and took around 72h. Without the spatial analyses, the code just takes a few minutes to build.
